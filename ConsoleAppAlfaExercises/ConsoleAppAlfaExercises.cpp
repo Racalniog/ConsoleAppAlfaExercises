@@ -21,9 +21,13 @@ int main()
 
 		auto startTime = chrono::high_resolution_clock::now();
 
-		dynArray = createArray(userInputNumber);
+		//dynArray = createArray(userInputNumber);
 
-		printArray(fillArray(createArray(userInputNumber)));
+		cout << reverseString(userInputString) << '\n';
+		cout << removeSpaces(userInputString) << '\n';
+		cout << countNumsInString(userInputString) << '\n';
+		cout << removeLeadingSpaces(userInputString) << '\n';
+		cout << removeTrailingSpaces(userInputString) << '\n';
 
 		auto endTime = chrono::high_resolution_clock::now();
 
