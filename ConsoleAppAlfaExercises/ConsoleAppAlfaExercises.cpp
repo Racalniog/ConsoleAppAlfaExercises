@@ -14,14 +14,16 @@ int main()
         if (userInputString == "q") {
             break;
         }
-
+        unique_ptr<int[]> dynArray;
         cout << "Enter a number: ";
         cin >> userInputNumber;
         cin.ignore(); // ignore newline in buffer
 
         auto startTime = chrono::high_resolution_clock::now();
 
-        cout << stringConcat(userInputString, userInputString) << "\n";
+        dynArray = createArray(userInputNumber);
+
+        cout << dynArray[1] << '\n';
 
         auto endTime = chrono::high_resolution_clock::now();
 
