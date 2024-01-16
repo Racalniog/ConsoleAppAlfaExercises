@@ -3,36 +3,36 @@
 //TODO add input handler with variable input(template), switch case for different functions, only ask for input after function is selected
 int main()
 {
-    string userInputString;
-    double userInputNumber;
-    string command;
+	string userInputString;
+	double userInputNumber;
+	string command;
 
-    while (true) {
-        cout << "Enter a string (or type 'q' to quit): ";
-        getline(cin, userInputString);
+	while (true) {
+		cout << "Enter a string (or type 'q' to quit): ";
+		getline(cin, userInputString);
 
-        if (userInputString == "q") {
-            break;
-        }
-        unique_ptr<int[]> dynArray;
-        cout << "Enter a number: ";
-        cin >> userInputNumber;
-        cin.ignore(); // ignore newline in buffer
+		if (userInputString == "q") {
+			break;
+		}
+		unique_ptr<int[]> dynArray;
+		cout << "Enter a number: ";
+		cin >> userInputNumber;
+		cin.ignore(); // ignore newline in buffer
 
-        auto startTime = chrono::high_resolution_clock::now();
+		auto startTime = chrono::high_resolution_clock::now();
 
-        dynArray = createArray(userInputNumber);
+		dynArray = createArray(userInputNumber);
 
-        cout << dynArray[1] << '\n';
+		printArray(fillArray(createArray(userInputNumber)));
 
-        auto endTime = chrono::high_resolution_clock::now();
+		auto endTime = chrono::high_resolution_clock::now();
 
-        auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
+		auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
 
-        cout << " Time taken by function: " << duration << " microseconds\n";
-    }
+		cout << " Time taken by function: " << duration << " microseconds\n";
+	}
 
-    cout << "Quitting app" << endl;
+	cout << "Quitting app" << endl;
 
 }
 
