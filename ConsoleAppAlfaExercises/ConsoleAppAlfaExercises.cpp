@@ -9,7 +9,7 @@ int main()
 	functions.push_back(make_unique<RemoveSpaces>());
 
 	while (true) {
-		cout << "Choose a function(0,1,2...) or type 'q' to quit.'\n' ";
+		cout << "Choose a function(0,1,2...) or type 'q' to quit.\n";
 		for (int i = 0; i < functions.size(); i++)
 			cout << i << ". " << functions[i]->getName() << '\n';
 		cin >> userInputString;
@@ -19,7 +19,7 @@ int main()
 		while (true) {
 			istringstream iss(userInputString);
 			if (iss >> userInputNumber && userInputNumber <= functions.size()-1) {
-				cout << "Entered number: " << userInputNumber << '\n';
+				//cout << "Entered number: " << userInputNumber << '\n';
 				break;
 			}
 			else {
@@ -28,7 +28,8 @@ int main()
 			cin >> userInputString;
 		}
 		cout << "Enter string to manipulate: ";
-		cin >> userInputString;
+		cin.ignore(); // Clear any remaining characters from the previous input
+		getline(cin, userInputString);
 		auto startTime = chrono::high_resolution_clock::now();
 		
 		if (functions.size() >= userInputNumber)
