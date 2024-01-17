@@ -37,7 +37,7 @@ int main()
 			cout << functions[userInputNumber]->execute(userInputString) << '\n';
 
 		auto duration = duration_cast<microseconds>(high_resolution_clock::now() - startTime).count();
-		cout << " Time taken by function: " << duration << " microseconds" << endl;
+		cout << " Time taken by function: " << duration << " microseconds\n" << endl;
 	}
 	cout << "Quitting app" << endl;
 }

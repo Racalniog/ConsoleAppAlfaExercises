@@ -1,7 +1,5 @@
 #include "Header.h"
 
-//array with smart pointers for safe memory management
-
 string Lotto::execute(string& x) {
 	srand(static_cast<unsigned int>(time(nullptr)));
 	int a, b, c, d, e, f, trys = {};
@@ -11,9 +9,9 @@ string Lotto::execute(string& x) {
 	set<int> generatedNumbers;
 	cout << "Choosen Numbers: ";
 	for (int number : targetNumbers) {
-		std::cout << number << " ";
+		cout << number << " ";
 	}
-	std::cout << std::endl;
+	cout << endl;
 	do {
 		generatedNumbers.clear(); // Clear the previous set of numbers
 
@@ -25,18 +23,21 @@ string Lotto::execute(string& x) {
 			} while (!generatedNumbers.insert(randomNumber).second);
 		}
 		trys++;
-	} while (generatedNumbers.size() != targetNumbers.size() || !std::equal(generatedNumbers.begin(), generatedNumbers.end(), targetNumbers.begin()));
+		// Output the generated numbers in-place
+	/*	cout << "Generated Numbers: ";
+		for (int number : generatedNumbers) {
+			cout << setw(2) << number << " ";
+		}
+		cout << '\r' << flush; // Carriage return and flush to update output in-place*/
+	} while (generatedNumbers.size() != targetNumbers.size() || !equal(generatedNumbers.begin(), generatedNumbers.end(), targetNumbers.begin()));
 	// Output the generated numbers
-	std::cout << "Generated Numbers and tickets: ";
+	cout << "Generated Numbers and tickets: ";
 	for (int number : generatedNumbers) {
-		std::cout << number << " ";
+		cout << number << " ";
 	}
-	std::cout << std::endl;
+	cout << endl;
 	cout << trys << endl;
-
-
-	std::cout << "Match found! The generated numbers match the target numbers." << std::endl;
-
+	cout << "Match found! The generated numbers match the target numbers." << endl;
 	return "";
 }
 string Lotto::getName() const {
