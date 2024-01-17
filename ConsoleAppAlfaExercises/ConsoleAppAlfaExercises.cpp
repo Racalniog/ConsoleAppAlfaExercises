@@ -1,14 +1,15 @@
 #include "Header.h"
-//TODO add input handler with variable input, only ask for input after function is selected
+//TODO add input handler with variable input fitting to selected function
 int main()
 {
 	string userInputString;
 	double userInputNumber = {};
 	vector<unique_ptr<BaseFunction>> functions;
 	functions.push_back(make_unique<ReverseStr>());
+	functions.push_back(make_unique<RemoveSpaces>());
 
 	while (true) {
-		cout << "Choose a function(0,1,2...) (or type 'q' to quit).'\n' ";
+		cout << "Choose a function(0,1,2...) or type 'q' to quit.'\n' ";
 		for (int i = 0; i < functions.size(); i++)
 			cout << i << ". " << functions[i]->getName() << '\n';
 		cin >> userInputString;
@@ -30,9 +31,8 @@ int main()
 		cin >> userInputString;
 		auto startTime = chrono::high_resolution_clock::now();
 		
-		if (functions.size() >= userInputNumber) {
+		if (functions.size() >= userInputNumber)
 			cout << functions[userInputNumber]->execute(userInputString) << '\n';
-		}
 
 		auto endTime = chrono::high_resolution_clock::now();
 		auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();

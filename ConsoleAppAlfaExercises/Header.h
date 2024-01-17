@@ -24,6 +24,12 @@ public:
 	string getName() const;
 };
 
+class RemoveSpaces: public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const;
+};
+
 unique_ptr<int[]> createArray(int a);
 void printArray(unique_ptr<int[]> a);
 unique_ptr<int[]> fillArray(unique_ptr<int[]> a);

@@ -9,6 +9,13 @@ string ReverseStr::getName() const {
 		return "reverseString(string a)";
 }
 
+string RemoveSpaces::execute(string& a) {
+	a.erase(remove_if(a.begin(), a.end(), isspace), a.end());
+	return a;
+}
+string RemoveSpaces::getName() const {
+	return "removeSpaces(string a)";
+}
 string reverseString(string a) {
 	reverse(a.begin(), a.end());
 	return a;
