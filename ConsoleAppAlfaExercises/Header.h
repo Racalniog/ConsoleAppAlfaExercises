@@ -9,7 +9,11 @@
 #include <map>
 #include <vector>
 #include <sstream>
+#include <set>
+
+
 using namespace std;
+using namespace chrono;
 
 class BaseFunction {
 public:
@@ -25,6 +29,12 @@ public:
 };
 
 class RemoveSpaces: public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const;
+};
+
+class Lotto: public BaseFunction {
 public:
 	string execute(string& a);
 	string getName() const;

@@ -3,10 +3,11 @@
 int main()
 {
 	string userInputString;
-	double userInputNumber = {};
+	int userInputNumber = {};
 	vector<unique_ptr<BaseFunction>> functions;
 	functions.push_back(make_unique<ReverseStr>());
 	functions.push_back(make_unique<RemoveSpaces>());
+	functions.push_back(make_unique<Lotto>());
 
 	while (true) {
 		cout << "Choose a function(0,1,2...) or type 'q' to quit.\n";
@@ -27,16 +28,15 @@ int main()
 			}
 			cin >> userInputString;
 		}
-		cout << "Enter string to manipulate: ";
+		cout << "Enter parameter(s) for function to manipulate: ";
 		cin.ignore(); // Clear any remaining characters from the previous input
 		getline(cin, userInputString);
-		auto startTime = chrono::high_resolution_clock::now();
+		auto startTime = high_resolution_clock::now();
 		
 		if (functions.size() >= userInputNumber)
 			cout << functions[userInputNumber]->execute(userInputString) << '\n';
 
-		auto endTime = chrono::high_resolution_clock::now();
-		auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
+		auto duration = duration_cast<microseconds>(high_resolution_clock::now() - startTime).count();
 		cout << " Time taken by function: " << duration << " microseconds" << endl;
 	}
 	cout << "Quitting app" << endl;
