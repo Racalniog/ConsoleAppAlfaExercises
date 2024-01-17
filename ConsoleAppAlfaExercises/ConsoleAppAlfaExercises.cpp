@@ -1,6 +1,6 @@
 #include "Header.h"
 
-//TODO add input handler with variable input(template), map data structure for mapping user choices to functions, only ask for input after function is selected
+//TODO add input handler with variable input, only ask for input after function is selected
 template<typename T>
 using FuncStrPtr = function<void(const T)>;
 
@@ -15,41 +15,43 @@ int main()
 	vector<unique_ptr<BaseFunction>> functions;
 	functions.push_back(make_unique<ReverseStr>());
 
-	//map<int, std::any> functionMap;
-
-
 	while (true) {
-		cout << "Enter a string (or type 'q' to quit): ";
-		getline(cin, userInputString);
-
+		cout << "Choose a function(0,1,2...) (or type 'q' to quit).'\n' ";
+		for (int i = 0; i < functions.size(); i++)
+			cout << i << ". " << functions[i]->getName() << '\n';
+		
+		//getline(cin, userInputString);
+		cin >> userInputString;
 		if (userInputString == "q") {
 			break;
 		}
-		unique_ptr<int[]> dynArray;
-		cout << "Enter a number: ";
-		cin >> userInputNumber;
-		cin.ignore(); // ignore newline in buffer
-
+		istringstream iss(userInputString);
+		if (iss >> userInputNumber) {
+			cout << "Entered number: " << userInputNumber << '\n';
+		}
+		else {
+			cout << "Entered string: " << userInputString << '\n';
+		}
+		cout << "Enter string to manipulate: ";
+		cin >> userInputString;
 		auto startTime = chrono::high_resolution_clock::now();
-
-		//dynArray = createArray(userInputNumber);
-
-		for (const auto& func : functions) {
-			cout << func->execute(userInputString) << '\n';
-			cout << func->getName() << '\n';
-
+		
+		if (functions.size() >= userInputNumber) {
+			cout << '\n' << functions[userInputNumber]->execute(userInputString);
 		}
 
-		cout << reverseString(userInputString) << '\n';
+		/*cout << reverseString(userInputString) << '\n';
 		cout << removeSpaces(userInputString) << '\n';
 		cout << countNumsInString(userInputString) << '\n';
 		cout << removeLeadingSpaces(userInputString) << '\n';
-		cout << removeTrailingSpaces(userInputString) << '\n';
+		cout << removeTrailingSpaces(userInputString) << '\n';*/
 
 		auto endTime = chrono::high_resolution_clock::now();
 
 		auto duration = chrono::duration_cast<chrono::microseconds>(endTime - startTime).count();
-
+		iss = {};
+		userInputString = {};
+		userInputNumber = {};
 		cout << " Time taken by function: " << duration << " microseconds\n";
 	}
 

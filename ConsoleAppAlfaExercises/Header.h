@@ -8,7 +8,7 @@
 #include <functional>
 #include <map>
 #include <vector>
-
+#include <sstream>
 using namespace std;
 
 class BaseFunction {
