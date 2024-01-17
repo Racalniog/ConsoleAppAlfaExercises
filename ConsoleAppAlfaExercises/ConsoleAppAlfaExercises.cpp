@@ -1,11 +1,22 @@
 #include "Header.h"
 
-//TODO add input handler with variable input(template), switch case for different functions, only ask for input after function is selected
+//TODO add input handler with variable input(template), map data structure for mapping user choices to functions, only ask for input after function is selected
+template<typename T>
+using FuncStrPtr = function<void(const T)>;
+
+
+
 int main()
 {
 	string userInputString;
 	double userInputNumber;
 	string command;
+
+	vector<unique_ptr<BaseFunction>> functions;
+	functions.push_back(make_unique<ReverseStr>());
+
+	//map<int, std::any> functionMap;
+
 
 	while (true) {
 		cout << "Enter a string (or type 'q' to quit): ";
@@ -22,6 +33,12 @@ int main()
 		auto startTime = chrono::high_resolution_clock::now();
 
 		//dynArray = createArray(userInputNumber);
+
+		for (const auto& func : functions) {
+			cout << func->execute(userInputString) << '\n';
+			cout << func->getName() << '\n';
+
+		}
 
 		cout << reverseString(userInputString) << '\n';
 		cout << removeSpaces(userInputString) << '\n';

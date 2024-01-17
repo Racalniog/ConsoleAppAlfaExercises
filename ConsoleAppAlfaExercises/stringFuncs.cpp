@@ -1,7 +1,12 @@
 #include "Header.h"
 
-string stringConcat(string a, string b) {
-	return a + b;
+
+string ReverseStr::execute(string& a) {
+		reverse(a.begin(), a.end());
+		return a;
+}
+string ReverseStr::getName() const {
+		return "reverseString(string a)";
 }
 
 string reverseString(string a) {

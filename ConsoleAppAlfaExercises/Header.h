@@ -5,10 +5,25 @@
 #include <chrono>
 #include <array>
 #include <algorithm>
+#include <functional>
+#include <map>
+#include <vector>
 
 using namespace std;
 
-string stringConcat(string a, string b);
+class BaseFunction {
+public:
+	virtual string execute(string& str) = 0;
+	virtual string getName() const = 0;
+	virtual ~BaseFunction() = default;
+};
+
+class ReverseStr : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const;
+};
+
 unique_ptr<int[]> createArray(int a);
 void printArray(unique_ptr<int[]> a);
 unique_ptr<int[]> fillArray(unique_ptr<int[]> a);
