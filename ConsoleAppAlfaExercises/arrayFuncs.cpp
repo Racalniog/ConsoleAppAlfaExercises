@@ -1,17 +1,17 @@
 #include "Header.h"
-
+//TODO fix input and edge cases
 string Lotto::execute(string& x) {
 	srand(static_cast<unsigned int>(time(nullptr)));
 	int a, b, c, d, e, f, trys = {};
-	cout << "Enter 6 numbers for Lotto between 1 and 49 (separated by spaces): ";
+	std::cout << "Enter 6 numbers for Lotto between 1 and 49 (separated by spaces): ";
 	cin >> a >> b >> c >> d >> e >> f;
-	vector<int> targetNumbers = {a,b,c,d,e,f};
+	set<int> targetNumbers = {a,b,c,d,e,f};
 	set<int> generatedNumbers;
-	cout << "Choosen Numbers: ";
+	std::cout << "Choosen Numbers: ";
 	for (int number : targetNumbers) {
-		cout << number << " ";
+		std::cout << number << " ";
 	}
-	cout << endl;
+	std::cout << endl;
 	do {
 		generatedNumbers.clear(); // Clear the previous set of numbers
 
@@ -20,24 +20,18 @@ string Lotto::execute(string& x) {
 			int randomNumber;
 			do {
 				randomNumber = rand() % 49 + 1; // Get a random number
-			} while (!generatedNumbers.insert(randomNumber).second);
+			} while (!generatedNumbers.insert(randomNumber).second);// check if generated number is in the set
 		}
 		trys++;
-		// Output the generated numbers in-place
-	/*	cout << "Generated Numbers: ";
-		for (int number : generatedNumbers) {
-			cout << setw(2) << number << " ";
-		}
-		cout << '\r' << flush; // Carriage return and flush to update output in-place*/
 	} while (generatedNumbers.size() != targetNumbers.size() || !equal(generatedNumbers.begin(), generatedNumbers.end(), targetNumbers.begin()));
 	// Output the generated numbers
-	cout << "Generated Numbers and tickets: ";
+	std::cout << "Generated Numbers and tickets: ";
 	for (int number : generatedNumbers) {
-		cout << number << " ";
+		std::cout << number << " ";
 	}
-	cout << endl;
-	cout << trys << endl;
-	cout << "Match found! The generated numbers match the target numbers." << endl;
+	std::cout << endl;
+	std::cout << trys << endl;
+	std::cout << "Match found! The generated numbers match the target numbers." << endl;
 	return "";
 }
 string Lotto::getName() const {
@@ -61,6 +55,6 @@ unique_ptr<int[]> fillArray(unique_ptr<int[]> a) {
 void printArray(unique_ptr<int[]> a) {
 	for (size_t i = 0; i < sizeof(a) / sizeof(a[0]); i++)
 	{
-		cout << a[i] << '\n';
+		std::cout << a[i] << '\n';
 	}
 }

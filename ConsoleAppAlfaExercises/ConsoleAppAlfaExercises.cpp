@@ -20,7 +20,6 @@ int main()
 		while (true) {
 			istringstream iss(userInputString);
 			if (iss >> userInputNumber && userInputNumber <= functions.size()-1) {
-				//cout << "Entered number: " << userInputNumber << '\n';
 				break;
 			}
 			else {
@@ -28,11 +27,12 @@ int main()
 			}
 			cin >> userInputString;
 		}
-		cout << "Enter parameter(s) for function to manipulate: ";
+		cout << "Enter parameter(s) for "<< functions[userInputNumber]->getName() << " to manipulate : ";
+		vector<pair<string, string>> parameters = extractParameters(functions[userInputNumber]->getName());
+		
 		cin.ignore(); // Clear any remaining characters from the previous input
 		getline(cin, userInputString);
 		auto startTime = high_resolution_clock::now();
-		
 		if (functions.size() >= userInputNumber)
 			cout << functions[userInputNumber]->execute(userInputString) << '\n';
 

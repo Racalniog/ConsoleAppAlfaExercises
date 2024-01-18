@@ -11,9 +11,12 @@
 #include <sstream>
 #include <set>
 #include <iomanip>
+#include <regex>
 
 using namespace std;
 using namespace chrono;
+
+vector<pair<string, string>> extractParameters(const string& functionSignature);
 
 class BaseFunction {
 public:
