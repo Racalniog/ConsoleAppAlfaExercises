@@ -52,3 +52,10 @@ string removeSpaces(string a);
 int countNumsInString(string a);
 string removeLeadingSpaces(string a);
 string removeTrailingSpaces(string a);
+
+
+class TicTacToe : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const;
+};

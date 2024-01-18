@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="ConsoleAppAlfaExercises.cpp" />
     <ClCompile Include="arrayFuncs.cpp" />
+    <ClCompile Include="TicTacToe.cpp" />
     <ClCompile Include="stringFuncs.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -8,6 +8,8 @@ int main()
 	functions.push_back(make_unique<ReverseStr>());
 	functions.push_back(make_unique<RemoveSpaces>());
 	functions.push_back(make_unique<Lotto>());
+	functions.push_back(make_unique<TicTacToe>());
+
 
 	while (true) {
 		cout << "Choose a function(0,1,2...) or type 'q' to quit.\n";
