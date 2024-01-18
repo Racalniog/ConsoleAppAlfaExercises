@@ -10,7 +10,6 @@ int main()
 	functions.push_back(make_unique<Lotto>());
 	functions.push_back(make_unique<TicTacToe>());
 
-
 	while (true) {
 		cout << "Choose a function(0,1,2...) or type 'q' to quit.\n";
 		for (int i = 0; i < functions.size(); i++)
@@ -38,8 +37,11 @@ int main()
 		if (functions.size() >= userInputNumber)
 			cout << functions[userInputNumber]->execute(userInputString) << '\n';
 
-		auto duration = duration_cast<microseconds>(high_resolution_clock::now() - startTime).count();
-		cout << " Time taken by function: " << duration << " microseconds\n" << endl;
+		auto endTime = high_resolution_clock::now();
+		auto duration = duration_cast<microseconds>(endTime - startTime).count();
+		auto minute = duration_cast<minutes>(endTime - startTime).count();
+		auto remainingMicroseconds = duration % 1000000;
+		cout << " Time taken by function: " << minute << " minutes " << remainingMicroseconds << " microseconds\n" << endl;
 	}
 	cout << "Quitting app" << endl;
 }
