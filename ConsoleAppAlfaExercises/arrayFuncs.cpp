@@ -35,7 +35,7 @@ string Lotto::execute(string& x) {
 	return "";
 }
 string Lotto::getName() const {
-	return "jackpotKnacker(int a, int b, int c, int d, int e, int f)";
+	return "jackpotCracker(int a, int b, int c, int d, int e, int f)";
 }
 
 unique_ptr<int[]> createArray(int a) {
