@@ -43,6 +43,38 @@ public:
 	}
 };
 
+class RemoveLeadingSpaces : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const {
+		return "removeLeadingSpaces(string a)";
+	}
+};
+
+class RemoveTrailingSpaces : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const {
+		return "removeTrailingSpaces(string a)";
+	}
+};
+
+class CountNumsInString : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const {
+		return "countNumsInString(string a)";
+	}
+};
+
+class Palindrome : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const {
+		return "isPalindrome(string a)";
+	}
+};
+
 class Lotto: public BaseFunction {
 public:
 	string execute(string& a);
@@ -52,12 +84,6 @@ public:
 unique_ptr<int[]> createArray(int a);
 void printArray(unique_ptr<int[]> a);
 unique_ptr<int[]> fillArray(unique_ptr<int[]> a);
-
-string reverseString(string a);
-string removeSpaces(string a);
-int countNumsInString(string a);
-string removeLeadingSpaces(string a);
-string removeTrailingSpaces(string a);
 
 template <typename... Args>
 void logOutput(Args&&... args);

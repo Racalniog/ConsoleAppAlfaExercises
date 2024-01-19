@@ -9,32 +9,44 @@ string RemoveSpaces::execute(string& a) {
 	a.erase(remove_if(a.begin(), a.end(), [](char c) { return std::isspace(c); }), a.end());
 	return a;
 }
-string reverseString(string a) {
-	reverse(a.begin(), a.end());
-	return a;
-}
 
-string removeSpaces(string a) {
-	a.erase(remove_if(a.begin(), a.end(), [](char c) { return std::isspace(c); }), a.end());
-	return a;
-}
-
-int countNumsInString(string a) {
+string CountNumsInString::execute(string& a) {
 	int nums = {};
 	for (char c : a)
 	{
 		if (isdigit(c))
 			nums++;
 	}
-	return nums;
+	cout << nums;
+	return "";
 }
 
-string removeLeadingSpaces(string a) {
+string Palindrome::execute(string& str) {
+	std::string cleanedStr;
+
+	// Remove non-alphanumeric characters and convert to lowercase
+	for (char ch : str) {
+		if (std::isalnum(ch)) {
+			cleanedStr += std::tolower(ch);
+		}
+	}
+
+	// Check if the cleaned string is a palindrome
+	for (size_t i = 0; i < cleanedStr.length() / 2; ++i) {
+		if (cleanedStr[i] != cleanedStr[cleanedStr.length() - 1 - i]) {
+			return "false";
+		}
+	}
+
+	return "true";
+}
+
+string RemoveLeadingSpaces::execute(string& a) {
 	a.erase(a.begin(), std::find_if_not(a.begin(), a.end(), [](char c) { return std::isspace(c); }));
 	return a;
 }
 
-string removeTrailingSpaces(string a) {
+string RemoveTrailingSpaces::execute(string& a) {
 	a.erase(std::find_if_not(a.rbegin(), a.rend(), [](char c) { return std::isspace(c); }).base(), a.end());
 	return a;
 }

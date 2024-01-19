@@ -4,17 +4,25 @@ int main()
 {
 	string userInputString;
 	int userInputNumber = {};
-	//Add class functions to a vector to call descriptions and functions more easily later
+	//Added class functions to a vector to call descriptions and functions more easily
 	vector<unique_ptr<BaseFunction>> functions;
 	functions.push_back(make_unique<ReverseStr>());
 	functions.push_back(make_unique<RemoveSpaces>());
+	functions.push_back(make_unique<CountNumsInString>());
+	functions.push_back(make_unique<RemoveLeadingSpaces>());
+	functions.push_back(make_unique<RemoveTrailingSpaces>());
 	functions.push_back(make_unique<Lotto>());
 	functions.push_back(make_unique<TicTacToe>());
+	functions.push_back(make_unique<Palindrome>());
 
 	while (true) {
 		cout << "Choose a function(0,1,2...) or type 'q' to quit.\n";
-		for (int i = 0; i < functions.size(); i++)
-			cout << i << ". " << functions[i]->getName() << '\n';
+		for (int i = 0; i < functions.size(); i++) {
+			cout << i << ". " << functions[i]->getName() << '\t';
+			if (i % 2 == 0 && i >1)
+				cout << '\n';
+		}
+		cout << '\n';
 		cin >> userInputString;
 		if (userInputString == "q") {
 			break;
