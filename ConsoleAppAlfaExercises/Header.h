@@ -12,10 +12,13 @@
 #include <set>
 #include <iomanip>
 #include <regex>
+#include <fstream>
+#include <ctime>
 
 using namespace std;
 using namespace chrono;
 
+extern ofstream logFile;
 vector<pair<string, string>> extractParameters(const string& functionSignature);
 
 class BaseFunction {
@@ -27,13 +30,17 @@ public:
 class ReverseStr : public BaseFunction {
 public:
 	string execute(string& a);
-	string getName() const;
+	string getName() const {
+		return "reverseString(string a)";
+	}
 };
 
 class RemoveSpaces: public BaseFunction {
 public:
 	string execute(string& a);
-	string getName() const;
+	string getName() const {
+		return "removeSpaces(string a)";
+	}
 };
 
 class Lotto: public BaseFunction {
@@ -52,7 +59,9 @@ int countNumsInString(string a);
 string removeLeadingSpaces(string a);
 string removeTrailingSpaces(string a);
 
-
+template <typename... Args>
+void logOutput(Args&&... args);
+void logInput(std::string& input);
 class TicTacToe : public BaseFunction {
 public:
 	string execute(string& a);

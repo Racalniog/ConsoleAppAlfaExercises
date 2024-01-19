@@ -4,16 +4,10 @@ string ReverseStr::execute(string& a) {
 		reverse(a.begin(), a.end());
 		return a;
 }
-string ReverseStr::getName() const {
-		return "reverseString(string a)";
-}
 
 string RemoveSpaces::execute(string& a) {
 	a.erase(remove_if(a.begin(), a.end(), [](char c) { return std::isspace(c); }), a.end());
 	return a;
-}
-string RemoveSpaces::getName() const {
-	return "removeSpaces(string a)";
 }
 string reverseString(string a) {
 	reverse(a.begin(), a.end());
