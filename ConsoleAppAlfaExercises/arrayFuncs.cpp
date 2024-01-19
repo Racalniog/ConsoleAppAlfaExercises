@@ -14,7 +14,6 @@ string Lotto::execute(string& x) {
 	std::cout << endl;
 	do {
 		generatedNumbers.clear(); // Clear the previous set of numbers
-
 		// Generate 6 random numbers
 		for (int i = 0; i < 6; ++i) {
 			int randomNumber;

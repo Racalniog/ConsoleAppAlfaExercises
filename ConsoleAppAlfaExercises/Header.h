@@ -1,5 +1,5 @@
 #pragma once
-
+//Header file for class, function definitions and includes
 #include <iostream>
 #include <string>
 #include <chrono>
@@ -22,7 +22,6 @@ class BaseFunction {
 public:
 	virtual string execute(string& str) = 0;
 	virtual string getName() const = 0;
-	virtual ~BaseFunction() = default;
 };
 
 class ReverseStr : public BaseFunction {

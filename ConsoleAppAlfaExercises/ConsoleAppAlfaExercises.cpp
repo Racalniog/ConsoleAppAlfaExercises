@@ -4,6 +4,7 @@ int main()
 {
 	string userInputString;
 	int userInputNumber = {};
+	//Add class functions to a vector to call descriptions and functions more easily later
 	vector<unique_ptr<BaseFunction>> functions;
 	functions.push_back(make_unique<ReverseStr>());
 	functions.push_back(make_unique<RemoveSpaces>());
@@ -18,9 +19,10 @@ int main()
 		if (userInputString == "q") {
 			break;
 		}
+		//Check for right input
 		while (true) {
 			istringstream iss(userInputString);
-			if (iss >> userInputNumber && userInputNumber <= functions.size()-1) {
+			if (iss >> userInputNumber && userInputNumber <= functions.size() - 1) {
 				break;
 			}
 			else {
@@ -28,11 +30,14 @@ int main()
 			}
 			cin >> userInputString;
 		}
+		//Print out functions and tell which parameters are needed
 		vector<pair<string, string>> parameters = extractParameters(functions[userInputNumber]->getName());
-		cout << "Enter " << parameters.size() << " parameter(s) for "<< functions[userInputNumber]->getName() << " to manipulate : ";
-		
+		cout << "Enter " << parameters.size() << " parameter(s) for " << functions[userInputNumber]->getName() << " to manipulate : ";
+
 		cin.ignore(); // Clear any remaining characters from the previous input
 		getline(cin, userInputString);
+
+		//Count process duration and start process
 		auto startTime = high_resolution_clock::now();
 		if (functions.size() >= userInputNumber)
 			cout << functions[userInputNumber]->execute(userInputString) << '\n';
