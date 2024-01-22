@@ -38,7 +38,7 @@ int main()
 			}
 			cin >> userInputString;
 		}
-		//Print out functions and tell which parameters are needed
+		//Print out function and tell which parameters are needed
 		vector<pair<string, string>> parameters = extractParameters(functions[userInputNumber]->getName());
 		cout << "Enter " << parameters.size() << " parameter(s) for " << functions[userInputNumber]->getName() << " to manipulate : ";
 

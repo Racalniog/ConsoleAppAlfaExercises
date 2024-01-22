@@ -30,6 +30,9 @@
     <ClCompile Include="logging.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="unitTests.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">

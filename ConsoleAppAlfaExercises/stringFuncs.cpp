@@ -26,7 +26,7 @@ string Palindrome::execute(string& str) {
 
 	// Remove non-alphanumeric characters and convert to lowercase
 	for (char ch : str) {
-		if (std::isalnum(ch)) {
+		if (iswalpha(ch)) {
 			cleanedStr += std::tolower(ch);
 		}
 	}
