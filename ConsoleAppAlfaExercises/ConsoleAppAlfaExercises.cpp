@@ -14,6 +14,11 @@ int main()
 	functions.push_back(make_unique<Lotto>());
 	functions.push_back(make_unique<TicTacToe>());
 	functions.push_back(make_unique<Palindrome>());
+	functions.push_back(make_unique<Vector>());
+	functions.push_back(make_unique<VectorMinMax>());
+	functions.push_back(make_unique<VectorReverse>());
+	functions.push_back(make_unique<VectorRound>());
+
 
 	while (true) {
 		cout << "Choose a function(0,1,2...) or type 'q' to quit.\n";

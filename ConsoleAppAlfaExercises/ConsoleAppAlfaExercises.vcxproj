@@ -134,6 +134,7 @@
     <ClCompile Include="TicTacToe.cpp" />
     <ClCompile Include="stringFuncs.cpp" />
     <ClCompile Include="unitTests.cpp" />
+    <ClCompile Include="vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />

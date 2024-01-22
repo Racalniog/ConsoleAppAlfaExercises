@@ -1,5 +1,6 @@
 #pragma once
 //Header file for class, function definitions and includes
+//TODO rewrite input and output for functions with input handler!
 #include <iostream>
 #include <string>
 #include <chrono>
@@ -25,6 +26,38 @@ class BaseFunction {
 public:
 	virtual string execute(string& str) = 0;
 	virtual string getName() const = 0;
+};
+
+class Vector : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const {
+		return "vecInit()";
+	}
+};
+
+class VectorMinMax : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const {
+		return "minMax(const vector<double>& vec)";
+	}
+};
+
+class VectorReverse : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const {
+		return "reversed(const vector<double>& v)";
+	}
+};
+
+class VectorRound : public BaseFunction {
+public:
+	string execute(string& a);
+	string getName() const {
+		return "roundVector(vector<double>& v) ";
+	}
 };
 
 class ReverseStr : public BaseFunction {
