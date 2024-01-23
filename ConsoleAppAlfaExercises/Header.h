@@ -15,6 +15,7 @@
 #include <regex>
 #include <fstream>
 #include <ctime>
+#include <thread>
 
 using namespace std;
 using namespace chrono;
@@ -111,6 +112,7 @@ public:
 class Lotto: public BaseFunction {
 public:
 	string execute(string& a);
+	void generateLottoNumbers(const std::set<int>& targetNumbers);
 	string getName() const;
 };
 
