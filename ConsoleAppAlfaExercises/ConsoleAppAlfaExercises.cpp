@@ -3,9 +3,10 @@
 int main()
 {
 	string userInputString;
-	int userInputNumber = {};
+	int userInputNumber = {}; 
 	//Added class functions to a vector to call descriptions and functions more easily
 	vector<unique_ptr<BaseFunction>> functions;
+
 	functions.push_back(make_unique<ReverseStr>());
 	functions.push_back(make_unique<RemoveSpaces>());
 	functions.push_back(make_unique<CountNumsInString>());
@@ -46,14 +47,51 @@ int main()
 		//Print out function and tell which parameters are needed
 		vector<pair<string, string>> parameters = extractParameters(functions[userInputNumber]->getName());
 		cout << "Enter " << parameters.size() << " parameter(s) for " << functions[userInputNumber]->getName() << " to manipulate : ";
+		// Check if the parameter types include "std::string"
+		bool hasStringParameter = false;
+		for (const auto& param : parameters) {
+			if (param.first == "string") {
+				hasStringParameter = true;
+				break;
+			}
+		}
+		auto startTime = high_resolution_clock::now();
+		// Call the function based on the detected parameter types
+		if (hasStringParameter && functions.size() >= userInputNumber) {
+			// Call the function to handle string input
+			cin >> userInputString;
+			auto result = functions[userInputNumber]->execute(userInputString);
+			for (auto x : result)
+			{
+				cout << x;
+			}
+		}
+		else if(functions.size() >= userInputNumber){
+			// Assuming no "string" parameters, process vector input
+			std::vector<double> inputVec;
+			std::cout << "Enter numbers separated by space: ";
+			std::string line;
+			std::getline(std::cin, line);
+			std::istringstream iss(line);
+			int num;
+			while (iss >> num) {
+				inputVec.push_back(num);
+			}
 
+			// Call the function to handle vector input
+			auto result = functions[userInputNumber]->execute(inputVec);
+			for (auto x : result)
+			{
+				cout << x << " ";
+			}
+
+		}
 		cin.ignore(); // Clear any remaining characters from the previous input
-		getline(cin, userInputString);
+		//getline(cin, userInputString);
 
 		//Count process duration and start process
-		auto startTime = high_resolution_clock::now();
-		if (functions.size() >= userInputNumber)
-			cout << functions[userInputNumber]->execute(userInputString) << '\n';
+		//if (functions.size() >= userInputNumber)
+		//	cout << functions[userInputNumber]->execute(userInputString) << '\n';
 
 		auto endTime = high_resolution_clock::now();
 		auto duration = duration_cast<microseconds>(endTime - startTime).count();

@@ -1,5 +1,8 @@
 #include "Header.h"
 //TODO fix input and edge cases
+string Lotto::execute(vector<double> userVector) {
+	return"";
+}
 string Lotto::execute(string& x) {
 	int a, b, c, d, e, f, trys = {};
 	std::cout << "Enter 6 numbers for Lotto between 1 and 49 (separated by spaces): ";

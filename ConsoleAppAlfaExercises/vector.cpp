@@ -32,31 +32,17 @@ string Vector::execute(string& a) {
     std::cout << std::endl;
 	return "";
 }
-
+string Vector::execute(vector<double> userVector) {
+    return"";
+}
 string VectorMinMax::execute(string& a) {
-    std::cout << "Enter numbers separated by spaces (enter f to finish): ";
-    std::vector<double> userVector;
-    double input;
-
-    while (std::cin >> input) {
-        // Successfully read a double
-        userVector.push_back(input);
-    }
-    // Check for the end-of-file condition
-    if (std::cin.eof()) {
-        // End of input reached
-        std::cout << "End of input reached." << std::endl;
-    }
-    else {
-        // Input was not a valid double
-        std::cout << "Detected letter input. Stopping user input." << std::endl;
-        std::cin.clear(); // Clear the error flag
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
-    }
+    return "";
+}
+string VectorMinMax::execute(vector<double> userVector) {
     if (userVector.empty()) {
         // Wenn der Vektor leer ist, gib ein Paar mit beiden Werten als NaN zurück.
         pair<double, double> result = std::make_pair(std::numeric_limits<double>::quiet_NaN(), std::numeric_limits<double>::quiet_NaN());
-        cout << "User Vector - Min: " << result.first << ", Max: " << result.second << std::endl;
+        std::cout << "User Vector - Min: " << result.first << ", Max: " << result.second << std::endl;
         return "Vector empty";
     }
 
@@ -64,7 +50,7 @@ string VectorMinMax::execute(string& a) {
     double maxVal = *std::max_element(userVector.begin(), userVector.end());
 
     pair<double, double> result = std::make_pair(minVal, maxVal);
-    cout << "User Vector - Min: " << result.first << ", Max: " << result.second << std::endl;
+    std::cout << "User Vector - Min: " << result.first << ", Max: " << result.second << std::endl;
     return "";
 }
 
@@ -111,7 +97,9 @@ string VectorReverse::execute(string& a) {
     }
     return "";
 }
-
+string VectorReverse::execute(vector<double> userVector) {
+    return"";
+}
 string VectorRound::execute(string& a) {
     std::cout << "Enter numbers separated by spaces (enter f to finish): ";
     std::vector<double> userVector;
@@ -148,4 +136,7 @@ string VectorRound::execute(string& a) {
         std::cout << value << " ";
     }
     return "";
+}
+string VectorRound::execute(vector<double> userVector) {
+    return"";
 }

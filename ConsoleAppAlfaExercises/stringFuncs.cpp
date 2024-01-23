@@ -1,15 +1,24 @@
 #include "Header.h"
 
+//TODO anagramm generator
+string ReverseStr::execute(vector<double> userVector) {
+	return"";
+}
 string ReverseStr::execute(string& a) {
 		reverse(a.begin(), a.end());
 		return a;
 }
 
+string RemoveSpaces::execute(vector<double> userVector) {
+	return"";
+}
 string RemoveSpaces::execute(string& a) {
 	a.erase(remove_if(a.begin(), a.end(), [](char c) { return std::isspace(c); }), a.end());
 	return a;
 }
-
+string CountNumsInString::execute(vector<double> userVector) {
+	return"";
+}
 string CountNumsInString::execute(string& a) {
 	int nums = {};
 	for (char c : a)
@@ -20,7 +29,9 @@ string CountNumsInString::execute(string& a) {
 	cout << nums;
 	return "";
 }
-
+string Palindrome::execute(vector<double> userVector) {
+	return"";
+}
 string Palindrome::execute(string& str) {
 	std::string cleanedStr;
 
@@ -40,12 +51,16 @@ string Palindrome::execute(string& str) {
 
 	return "true";
 }
-
+string RemoveLeadingSpaces::execute(vector<double> userVector) {
+	return"";
+}
 string RemoveLeadingSpaces::execute(string& a) {
 	a.erase(a.begin(), std::find_if_not(a.begin(), a.end(), [](char c) { return std::isspace(c); }));
 	return a;
 }
-
+string RemoveTrailingSpaces::execute(vector<double> userVector) {
+	return"";
+}
 string RemoveTrailingSpaces::execute(string& a) {
 	a.erase(std::find_if_not(a.rbegin(), a.rend(), [](char c) { return std::isspace(c); }).base(), a.end());
 	return a;
