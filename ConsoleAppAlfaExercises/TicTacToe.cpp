@@ -1,7 +1,8 @@
 #include "Header.h"
 
 void runGame();
-string TicTacToe::execute(vector<double> userVector) {
+string TicTacToe::execute(vector<double>& userVector) {
+	runGame();
 	return"";
 }
 string TicTacToe::execute(string& a) {

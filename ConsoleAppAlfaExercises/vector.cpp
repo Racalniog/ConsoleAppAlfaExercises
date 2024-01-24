@@ -1,6 +1,9 @@
 #include "Header.h"
 
 string Vector::execute(string& a) {
+	return "";
+}
+string Vector::execute(vector<double>& userVector) {
     // Methode 1: Initialisierung mit expliziten Werten
     std::vector<double> method1 = { 1.0, 2.5, 3.7, 4.2 };
 
@@ -30,15 +33,12 @@ string Vector::execute(string& a) {
         std::cout << value << " ";
     }
     std::cout << std::endl;
-	return "";
-}
-string Vector::execute(vector<double> userVector) {
     return"";
 }
 string VectorMinMax::execute(string& a) {
     return "";
 }
-string VectorMinMax::execute(vector<double> userVector) {
+string VectorMinMax::execute(vector<double>& userVector) {
     if (userVector.empty()) {
         // Wenn der Vektor leer ist, gib ein Paar mit beiden Werten als NaN zurück.
         pair<double, double> result = std::make_pair(std::numeric_limits<double>::quiet_NaN(), std::numeric_limits<double>::quiet_NaN());
@@ -55,26 +55,9 @@ string VectorMinMax::execute(vector<double> userVector) {
 }
 
 string VectorReverse::execute(string& a) {
-    std::cout << "Enter numbers separated by spaces (enter f to finish): ";
-    std::vector<double> userVector;
-    double input;
-
-    while (std::cin >> input) {
-        // Successfully read a double
-        userVector.push_back(input);
-    }
-    // Check for the end-of-file condition
-    if (std::cin.eof()) {
-        // End of input reached
-        std::cout << "End of input reached." << std::endl;
-    }
-    else {
-        // Input was not a valid double
-        std::cout << "Detected letter input. Stopping user input." << std::endl;
-        std::cin.clear(); // Clear the error flag
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
-    }
-
+    return "";
+}
+string VectorReverse::execute(vector<double>& userVector) {
     std::cout << "Original Vector: ";
     for (double value : userVector) {
         std::cout << value << " ";
@@ -95,32 +78,13 @@ string VectorReverse::execute(string& a) {
     for (double value : reversedVector) {
         std::cout << value << " ";
     }
-    return "";
-}
-string VectorReverse::execute(vector<double> userVector) {
     return"";
 }
 string VectorRound::execute(string& a) {
-    std::cout << "Enter numbers separated by spaces (enter f to finish): ";
-    std::vector<double> userVector;
-    double input;
+   return "";
+}
+string VectorRound::execute(vector<double>& userVector) {
     std::vector<double> roundedVector;
-
-    while (std::cin >> input) {
-        // Successfully read a double
-        userVector.push_back(input);
-    }
-    // Check for the end-of-file condition
-    if (std::cin.eof()) {
-        // End of input reached
-        std::cout << "End of input reached." << std::endl;
-    }
-    else {
-        // Input was not a valid double
-        std::cout << "Detected letter input. Stopping user input." << std::endl;
-        std::cin.clear(); // Clear the error flag
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
-    }
 
     std::cout << "Original Vector: ";
     for (double value : userVector) {
@@ -135,8 +99,5 @@ string VectorRound::execute(string& a) {
     for (double value : userVector) {
         std::cout << value << " ";
     }
-    return "";
-}
-string VectorRound::execute(vector<double> userVector) {
     return"";
 }

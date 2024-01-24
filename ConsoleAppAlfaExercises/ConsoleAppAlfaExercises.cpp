@@ -29,7 +29,8 @@ int main()
 				cout << '\n';
 		}
 		cout << '\n';
-		cin >> userInputString;
+		getline(cin, userInputString);
+
 		if (userInputString == "q") {
 			break;
 		}
@@ -42,7 +43,7 @@ int main()
 			else {
 				cout << "Please enter a number to choose function\n";
 			}
-			cin >> userInputString;
+			getline(cin, userInputString);
 		}
 		//Print out function and tell which parameters are needed
 		vector<pair<string, string>> parameters = extractParameters(functions[userInputNumber]->getName());
@@ -59,45 +60,36 @@ int main()
 		// Call the function based on the detected parameter types
 		if (hasStringParameter && functions.size() >= userInputNumber) {
 			// Call the function to handle string input
-			cin >> userInputString;
+			getline(cin, userInputString);
 			auto result = functions[userInputNumber]->execute(userInputString);
 			for (auto x : result)
 			{
 				cout << x;
 			}
 		}
-		else if(functions.size() >= userInputNumber){
+		else if(!hasStringParameter && functions.size() >= userInputNumber){
 			// Assuming no "string" parameters, process vector input
 			std::vector<double> inputVec;
 			std::cout << "Enter numbers separated by space: ";
 			std::string line;
 			std::getline(std::cin, line);
 			std::istringstream iss(line);
-			int num;
+			double num;
 			while (iss >> num) {
 				inputVec.push_back(num);
 			}
-
 			// Call the function to handle vector input
 			auto result = functions[userInputNumber]->execute(inputVec);
 			for (auto x : result)
 			{
 				cout << x << " ";
 			}
-
 		}
-		cin.ignore(); // Clear any remaining characters from the previous input
-		//getline(cin, userInputString);
-
-		//Count process duration and start process
-		//if (functions.size() >= userInputNumber)
-		//	cout << functions[userInputNumber]->execute(userInputString) << '\n';
-
 		auto endTime = high_resolution_clock::now();
 		auto duration = duration_cast<microseconds>(endTime - startTime).count();
 		auto minute = duration_cast<minutes>(endTime - startTime).count();
 		auto remainingMicroseconds = duration % 1000000;
-		cout << " Time taken by function: " << minute << " minutes " << remainingMicroseconds << " microseconds\n" << endl;
+		cout << "\n Time taken by function: " << minute << " minutes " << remainingMicroseconds << " microseconds\n" << endl;
 	}
 	cout << "Quitting app" << endl;
 }

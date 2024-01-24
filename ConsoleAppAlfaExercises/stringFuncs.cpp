@@ -1,7 +1,7 @@
 #include "Header.h"
 
 //TODO anagramm generator
-string ReverseStr::execute(vector<double> userVector) {
+string ReverseStr::execute(vector<double>& userVector) {
 	return"";
 }
 string ReverseStr::execute(string& a) {
@@ -9,14 +9,14 @@ string ReverseStr::execute(string& a) {
 		return a;
 }
 
-string RemoveSpaces::execute(vector<double> userVector) {
+string RemoveSpaces::execute(vector<double>& userVector) {
 	return"";
 }
 string RemoveSpaces::execute(string& a) {
 	a.erase(remove_if(a.begin(), a.end(), [](char c) { return std::isspace(c); }), a.end());
 	return a;
 }
-string CountNumsInString::execute(vector<double> userVector) {
+string CountNumsInString::execute(vector<double>& userVector) {
 	return"";
 }
 string CountNumsInString::execute(string& a) {
@@ -29,7 +29,7 @@ string CountNumsInString::execute(string& a) {
 	cout << nums;
 	return "";
 }
-string Palindrome::execute(vector<double> userVector) {
+string Palindrome::execute(vector<double>& userVector) {
 	return"";
 }
 string Palindrome::execute(string& str) {
@@ -51,14 +51,14 @@ string Palindrome::execute(string& str) {
 
 	return "true";
 }
-string RemoveLeadingSpaces::execute(vector<double> userVector) {
+string RemoveLeadingSpaces::execute(vector<double>& userVector) {
 	return"";
 }
 string RemoveLeadingSpaces::execute(string& a) {
 	a.erase(a.begin(), std::find_if_not(a.begin(), a.end(), [](char c) { return std::isspace(c); }));
 	return a;
 }
-string RemoveTrailingSpaces::execute(vector<double> userVector) {
+string RemoveTrailingSpaces::execute(vector<double>& userVector) {
 	return"";
 }
 string RemoveTrailingSpaces::execute(string& a) {

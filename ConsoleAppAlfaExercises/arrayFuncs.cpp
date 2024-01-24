@@ -1,24 +1,21 @@
 #include "Header.h"
 //TODO fix input and edge cases
-string Lotto::execute(vector<double> userVector) {
-	return"";
+string Lotto::execute(string& a) {
+	return "";
 }
-string Lotto::execute(string& x) {
-	int a, b, c, d, e, f, trys = {};
-	std::cout << "Enter 6 numbers for Lotto between 1 and 49 (separated by spaces): ";
-	cin >> a >> b >> c >> d >> e >> f;
-	set<int> targetNumbers = {a,b,c,d,e,f};
+string Lotto::execute(vector<double>& userVector) {
 	std::cout << "Choosen Numbers: ";
-	for (int number : targetNumbers) {
+	sort(userVector.begin(), userVector.end());
+	for (int number : userVector) {
 		std::cout << number << " ";
 	}
 	std::cout << endl;
-	std::thread lottoThread(&Lotto::generateLottoNumbers, this, targetNumbers);
+	std::thread lottoThread(&Lotto::generateLottoNumbers, this, userVector);
 
 	lottoThread.join(); // Wait for the lottoThread to finish	
-	return "";
+	return"";
 }
-void Lotto::generateLottoNumbers(const std::set<int>& targetNumbers) {
+void Lotto::generateLottoNumbers(const std::vector<double>& targetNumbers) {
 	srand(static_cast<unsigned int>(time(nullptr)));
 	int trys = 0;
 	std::set<int> generatedNumbers;
