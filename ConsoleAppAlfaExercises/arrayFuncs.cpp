@@ -6,7 +6,7 @@ string Lotto::execute(string& a) {
 string Lotto::execute(vector<double>& userVector) {
 	std::cout << "Choosen Numbers: ";
 	sort(userVector.begin(), userVector.end());
-	for (int number : userVector) {
+	for (auto number : userVector) {
 		std::cout << number << " ";
 	}
 	std::cout << endl;
@@ -44,7 +44,7 @@ void Lotto::generateLottoNumbers(const std::vector<double>& targetNumbers) {
 	std::cout << trys << std::endl;
 	std::cout << "Match found! The generated numbers match the target numbers." << std::endl;
 }
-string Lotto::getName() const {
+string Lotto::getName() {
 	return "jackpotCracker(int a, int b, int c, int d, int e, int f)";
 }
 

@@ -1,7 +1,6 @@
 #include "Header.h"
 
 // Function to log current time and message to a file WIP
-std::ofstream logFile("log.txt", std::ios::out | std::ios::app);
 
 // Function to get the current timestamp as a string
 std::string getCurrentTimestamp() {

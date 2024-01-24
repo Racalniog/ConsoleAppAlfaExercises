@@ -9,7 +9,7 @@ string TicTacToe::execute(string& a) {
 	runGame();
 	return a;
 }
-string TicTacToe::getName() const {
+string TicTacToe::getName() {
 	return "playTicTacToe()";
 }
 

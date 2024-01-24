@@ -27,14 +27,14 @@ class BaseFunction {
 public:
 	virtual string execute(string& str) = 0;
 	virtual string execute(vector<double>&) = 0;
-	virtual string getName() const = 0;
+	virtual string getName()  = 0;
 };
 
 class Vector : public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
+	string getName()  {
 		return "vecInit()";
 	}
 };
@@ -43,8 +43,8 @@ class VectorMinMax : public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
-		return "minMax(const vector<double>& vec)";
+	string getName()  {
+		return "minMax( vector<double>& vec)";
 	}
 };
 
@@ -52,8 +52,8 @@ class VectorReverse : public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
-		return "reversed(const vector<double>& v)";
+	string getName()  {
+		return "reversed( vector<double>& v)";
 	}
 };
 
@@ -61,7 +61,7 @@ class VectorRound : public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
+	string getName()  {
 		return "roundVector(vector<double>& v) ";
 	}
 };
@@ -70,7 +70,7 @@ class ReverseStr : public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
+	string getName()  {
 		return "reverseString(string a)";
 	}
 };
@@ -79,7 +79,7 @@ class RemoveSpaces: public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
+	string getName()  {
 		return "removeSpaces(string a)";
 	}
 };
@@ -88,7 +88,7 @@ class RemoveLeadingSpaces : public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
+	string getName()  {
 		return "removeLeadingSpaces(string a)";
 	}
 };
@@ -97,7 +97,7 @@ class RemoveTrailingSpaces : public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
+	string getName()  {
 		return "removeTrailingSpaces(string a)";
 	}
 };
@@ -106,7 +106,7 @@ class CountNumsInString : public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
+	string getName()  {
 		return "countNumsInString(string a)";
 	}
 };
@@ -115,7 +115,7 @@ class Palindrome : public BaseFunction {
 public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
-	string getName() const {
+	string getName()  {
 		return "isPalindrome(string a)";
 	}
 };
@@ -125,9 +125,14 @@ public:
 	string execute(string& a);
 	string execute(vector<double>& userVector);
 	void generateLottoNumbers(const std::vector<double>& targetNumbers);
-	string getName() const;
+	string getName() ;
 };
-
+class Rekursion : public BaseFunction {
+public:
+	string execute(string& a);
+	string execute(vector<double>& userVector);
+	string getName() ;
+};
 unique_ptr<int[]> createArray(int a);
 void printArray(unique_ptr<int[]> a);
 unique_ptr<int[]> fillArray(unique_ptr<int[]> a);
@@ -135,9 +140,10 @@ unique_ptr<int[]> fillArray(unique_ptr<int[]> a);
 template <typename... Args>
 void logOutput(Args&&... args);
 void logInput(std::string& input);
+
 class TicTacToe : public BaseFunction {
 public:
 	string execute(vector<double>& userVector);
 	string execute(string& a);
-	string getName() const;
+	string getName() ;
 };

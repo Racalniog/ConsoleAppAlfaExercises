@@ -1,12 +1,13 @@
 #include "Header.h"
-//TODO add input handler with variable input fitting to selected function
+//TODO clean code, fix time taking
+std::ofstream logFile("log.txt", std::ios::out | std::ios::app);
+
 int main()
 {
 	string userInputString;
 	int userInputNumber = {}; 
 	//Added class functions to a vector to call descriptions and functions more easily
 	vector<unique_ptr<BaseFunction>> functions;
-
 	functions.push_back(make_unique<ReverseStr>());
 	functions.push_back(make_unique<RemoveSpaces>());
 	functions.push_back(make_unique<CountNumsInString>());
@@ -19,10 +20,11 @@ int main()
 	functions.push_back(make_unique<VectorMinMax>());
 	functions.push_back(make_unique<VectorReverse>());
 	functions.push_back(make_unique<VectorRound>());
+	functions.push_back(make_unique<Rekursion>());
 
 
 	while (true) {
-		cout << "Choose a function(0,1,2...) or type 'q' to quit.\n";
+		cout <<"Choose a function(0,1,2...) or type 'q' to quit.\n";
 		for (int i = 0; i < functions.size(); i++) {
 			cout << i << ". " << functions[i]->getName() << '\t';
 			if (i % 2 == 0 && i >1)
@@ -30,7 +32,6 @@ int main()
 		}
 		cout << '\n';
 		getline(cin, userInputString);
-
 		if (userInputString == "q") {
 			break;
 		}
@@ -48,7 +49,7 @@ int main()
 		//Print out function and tell which parameters are needed
 		vector<pair<string, string>> parameters = extractParameters(functions[userInputNumber]->getName());
 		cout << "Enter " << parameters.size() << " parameter(s) for " << functions[userInputNumber]->getName() << " to manipulate : ";
-		// Check if the parameter types include "std::string"
+		// Check if the parameter types include "string"
 		bool hasStringParameter = false;
 		for (const auto& param : parameters) {
 			if (param.first == "string") {
