@@ -42,9 +42,15 @@
     <ClCompile Include="recursion.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Becher.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Becher.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

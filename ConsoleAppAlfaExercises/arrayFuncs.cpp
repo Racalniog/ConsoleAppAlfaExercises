@@ -1,5 +1,5 @@
 #include "Header.h"
-//TODO fix input and edge cases
+
 string Lotto::execute(string& a) {
 	return "";
 }

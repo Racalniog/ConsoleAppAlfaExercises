@@ -1,5 +1,5 @@
 #include "Header.h"
-//TODO clean code, fix time taking
+//TODO clean code, fix time taking and logging
 std::ofstream logFile("log.txt", std::ios::out | std::ios::app);
 
 int main()
@@ -21,6 +21,8 @@ int main()
 	functions.push_back(make_unique<VectorReverse>());
 	functions.push_back(make_unique<VectorRound>());
 	functions.push_back(make_unique<Rekursion>());
+	functions.push_back(make_unique<Becher>());
+
 
 
 	while (true) {

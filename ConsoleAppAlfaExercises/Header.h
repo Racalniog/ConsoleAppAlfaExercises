@@ -1,6 +1,5 @@
 #pragma once
-//Header file for class, function definitions and includes
-//TODO rewrite input and output for functions with input handler!
+//TODO fit input better to all exceptionel functions!
 #include <iostream>
 #include <string>
 #include <chrono>
@@ -17,6 +16,8 @@
 #include <ctime>
 #include <thread>
 
+#include "Becher.h"
+
 using namespace std;
 using namespace chrono;
 
@@ -28,6 +29,25 @@ public:
 	virtual string execute(string& str) = 0;
 	virtual string execute(vector<double>&) = 0;
 	virtual string getName()  = 0;
+};
+
+class Becher : public BaseFunction
+{
+public:
+	Becher() = default;
+	Becher(const std::string& inhalt, int fassungsvermoegen);
+	string execute(string& a);
+	string execute(vector<double>& userVector);
+	string getName();
+	void auffuellen();
+	void leertrinken();
+	void schluckNehmen();
+	void zeigeInformationen() const;
+
+private:
+	std::string inhalt_;
+	int fassungsvermoegen_;
+	double fuellhoehe_;
 };
 
 class Vector : public BaseFunction {
