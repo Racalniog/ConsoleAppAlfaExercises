@@ -1,88 +1,97 @@
 #include "Header.h"
 
-//TODO anagramm generator
-string ReverseStr::execute(vector<double>& userVector) {
-	return"";
-}
-string ReverseStr::execute(string& a) {
-		reverse(a.begin(), a.end());
-		return a;
+// TODO: Anagram generator
+std::string ReverseStr::Execute(std::vector<double>& userVector) {
+    return "";
 }
 
-string RemoveSpaces::execute(vector<double>& userVector) {
-	return"";
-}
-string RemoveSpaces::execute(string& a) {
-	a.erase(remove_if(a.begin(), a.end(), [](char c) { return std::isspace(c); }), a.end());
-	return a;
-}
-string CountNumsInString::execute(vector<double>& userVector) {
-	return"";
-}
-string CountNumsInString::execute(string& a) {
-	int nums = {};
-	for (char c : a)
-	{
-		if (isdigit(c))
-			nums++;
-	}
-	cout << nums;
-	return "";
-}
-string Palindrome::execute(vector<double>& userVector) {
-	return"";
-}
-string Palindrome::execute(string& str) {
-	std::string cleanedStr;
-
-	// Remove non-alphanumeric characters and convert to lowercase
-	for (char ch : str) {
-		if (iswalpha(ch)) {
-			cleanedStr += std::tolower(ch);
-		}
-	}
-
-	// Check if the cleaned string is a palindrome
-	for (size_t i = 0; i < cleanedStr.length() / 2; ++i) {
-		if (cleanedStr[i] != cleanedStr[cleanedStr.length() - 1 - i]) {
-			return "false";
-		}
-	}
-
-	return "true";
-}
-string RemoveLeadingSpaces::execute(vector<double>& userVector) {
-	return"";
-}
-string RemoveLeadingSpaces::execute(string& a) {
-	a.erase(a.begin(), std::find_if_not(a.begin(), a.end(), [](char c) { return std::isspace(c); }));
-	return a;
-}
-string RemoveTrailingSpaces::execute(vector<double>& userVector) {
-	return"";
-}
-string RemoveTrailingSpaces::execute(string& a) {
-	a.erase(std::find_if_not(a.rbegin(), a.rend(), [](char c) { return std::isspace(c); }).base(), a.end());
-	return a;
+std::string ReverseStr::Execute(std::string& a) {
+    std::reverse(a.begin(), a.end());
+    return a;
 }
 
-vector<pair<string, string>> extractParameters(const string& functionSignature) {
-	vector<pair<string, string>> parameters;
+std::string RemoveSpaces::Execute(std::vector<double>& userVector) {
+    return "";
+}
 
-	// Define a regular expression pattern to match parameter types and names
-	regex pattern(R"((\w+)\s+(\w+))");
+std::string RemoveSpaces::Execute(std::string& a) {
+    a.erase(std::remove_if(a.begin(), a.end(), [](char c) { return std::isspace(c); }), a.end());
+    return a;
+}
 
-	// Use regex_iterator to iterate over matches in the function signature
-	auto it = sregex_iterator(functionSignature.begin(), functionSignature.end(), pattern);
-	auto end = sregex_iterator();
+std::string CountNumsInString::Execute(std::vector<double>& userVector) {
+    return "";
+}
 
-	for (; it != end; ++it) {
-		// Extract matched parameter type and name
-		smatch match = *it;
-		if (match.size() == 3) { // Assuming two capturing groups (type and name)
-			parameters.emplace_back(match[1], match[2]);
-		}
-	}
+std::string CountNumsInString::Execute(std::string& a) {
+    int nums = 0;
+    for (char c : a) {
+        if (std::isdigit(c))
+            nums++;
+    }
+    std::cout << nums;
+    return "";
+}
 
-	return parameters;
+std::string Palindrome::Execute(std::vector<double>& userVector) {
+    return "";
+}
+
+std::string Palindrome::Execute(std::string& str) {
+    std::string cleanedStr;
+
+    // Remove non-alphanumeric characters and convert to lowercase
+    for (char ch : str) {
+        if (iswalnum(ch)) {
+            cleanedStr += std::tolower(ch);
+        }
+    }
+
+    // Check if the cleaned string is a palindrome
+    for (size_t i = 0; i < cleanedStr.length() / 2; ++i) {
+        if (cleanedStr[i] != cleanedStr[cleanedStr.length() - 1 - i]) {
+            return "false";
+        }
+    }
+
+    return "true";
+}
+
+std::string RemoveLeadingSpaces::Execute(std::vector<double>& userVector) {
+    return "";
+}
+
+std::string RemoveLeadingSpaces::Execute(std::string& a) {
+    a.erase(a.begin(), std::find_if_not(a.begin(), a.end(), [](char c) { return std::isspace(c); }));
+    return a;
+}
+
+std::string RemoveTrailingSpaces::Execute(std::vector<double>& userVector) {
+    return "";
+}
+
+std::string RemoveTrailingSpaces::Execute(std::string& a) {
+    a.erase(std::find_if_not(a.rbegin(), a.rend(), [](char c) { return std::isspace(c); }).base(), a.end());
+    return a;
+}
+
+std::vector<std::pair<std::string, std::string>> ExtractParameters(const std::string& functionSignature) {
+    std::vector<std::pair<std::string, std::string>> parameters;
+
+    // Define a regular expression pattern to match parameter types and names
+    std::regex pattern(R"((\w+)\s+(\w+))");
+
+    // Use regex_iterator to iterate over matches in the function signature
+    auto it = std::sregex_iterator(functionSignature.begin(), functionSignature.end(), pattern);
+    auto end = std::sregex_iterator();
+
+    for (; it != end; ++it) {
+        // Extract matched parameter type and name
+        std::smatch match = *it;
+        if (match.size() == 3) { // Assuming two capturing groups (type and name)
+            parameters.emplace_back(match[1], match[2]);
+        }
+    }
+
+    return parameters;
 }

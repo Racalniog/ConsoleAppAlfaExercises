@@ -1,7 +1,7 @@
 #include "Header.h"
 
 
-string Rekursion::getName() {
+std::string Rekursion::GetName() {
 	return "fibN(int i)";
 }
 
@@ -13,11 +13,11 @@ int fibonacciRecursive(int n) {
         return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
     }
 }
-string Rekursion::execute(string& x) {
+std::string Rekursion::Execute(std::string& x) {
     return "";
 }
-string Rekursion::execute(vector<double>& x) {
-    cout << fibonacciRecursive(x[0]);
+std::string Rekursion::Execute(std::vector<double>& x) {
+    std::cout << fibonacciRecursive(x[0]);
 
 	return "";
 }

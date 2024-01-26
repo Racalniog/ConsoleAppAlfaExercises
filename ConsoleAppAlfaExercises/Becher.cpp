@@ -1,40 +1,42 @@
 #include "Header.h"
 
-string Becher::getName() {
+std::string Becher::GetName() {
     return "Becher Klasse";
 }
 
-string Becher::execute(string& x) {
+std::string Becher::Execute(std::string& x) {
     return "";
 }
-string Becher::execute(vector<double>& x) {
+
+std::string Becher::Execute(std::vector<double>& x) {
     Becher kaffeeBecher("Kaffee", 250);
 
-    kaffeeBecher.zeigeInformationen(); 
+    kaffeeBecher.ZeigeInformationen();
 
-    kaffeeBecher.auffuellen();
-    kaffeeBecher.zeigeInformationen(); 
+    kaffeeBecher.Auffuellen();
+    kaffeeBecher.ZeigeInformationen();
 
-    kaffeeBecher.schluckNehmen();
-    kaffeeBecher.zeigeInformationen(); 
+    kaffeeBecher.SchluckNehmen();
+    kaffeeBecher.ZeigeInformationen();
 
-    kaffeeBecher.leertrinken();
-    kaffeeBecher.zeigeInformationen(); 
+    kaffeeBecher.Leertrinken();
+    kaffeeBecher.ZeigeInformationen();
+
     return "";
 }
 
 Becher::Becher(const std::string& inhalt, int fassungsvermoegen)
     : inhalt_(inhalt), fassungsvermoegen_(fassungsvermoegen), fuellhoehe_(0.0) {}
 
-void Becher::auffuellen() {
+void Becher::Auffuellen() {
     fuellhoehe_ = 1.0;
 }
 
-void Becher::leertrinken() {
+void Becher::Leertrinken() {
     fuellhoehe_ = 0.0;
 }
 
-void Becher::schluckNehmen() {
+void Becher::SchluckNehmen() {
     if (fuellhoehe_ > 0.0) {
         fuellhoehe_ -= 20.0 / fassungsvermoegen_;
         if (fuellhoehe_ < 0.0) {
@@ -46,7 +48,7 @@ void Becher::schluckNehmen() {
     }
 }
 
-void Becher::zeigeInformationen() const {
+void Becher::ZeigeInformationen() const {
     std::cout << "Inhalt: " << inhalt_ << ", Fassungsvermoegen: " << fassungsvermoegen_
         << " ml, Fuellhoehe: " << (fuellhoehe_ * 100) << "%" << std::endl;
 }

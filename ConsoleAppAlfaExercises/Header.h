@@ -1,6 +1,8 @@
 #pragma once
-//TODO fit input better to all exceptionel functions!
+
+// TODO: Fit input better to all exceptional functions!
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <chrono>
 #include <array>
@@ -12,158 +14,157 @@
 #include <set>
 #include <iomanip>
 #include <regex>
-#include <fstream>
 #include <ctime>
 #include <thread>
 
 #include "Becher.h"
 
-using namespace std;
-using namespace chrono;
+extern std::ofstream logFile;
 
-extern ofstream logFile;
-vector<pair<string, string>> extractParameters(const string& functionSignature);
+std::vector<std::pair<std::string, std::string>> ExtractParameters(const std::string& functionSignature);
 
 class BaseFunction {
 public:
-	virtual string execute(string& str) = 0;
-	virtual string execute(vector<double>&) = 0;
-	virtual string getName()  = 0;
+    virtual std::string Execute(std::string& str) = 0;
+    virtual std::string Execute(std::vector<double>&) = 0;
+    virtual std::string GetName() = 0;
 };
 
-class Becher : public BaseFunction
-{
+class Becher : public BaseFunction {
 public:
-	Becher() = default;
-	Becher(const std::string& inhalt, int fassungsvermoegen);
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName();
-	void auffuellen();
-	void leertrinken();
-	void schluckNehmen();
-	void zeigeInformationen() const;
+    Becher() = default;
+    Becher(const std::string& inhalt, int fassungsvermoegen);
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName();
+    void Auffuellen();
+    void Leertrinken();
+    void SchluckNehmen();
+    void ZeigeInformationen() const;
 
 private:
-	std::string inhalt_;
-	int fassungsvermoegen_;
-	double fuellhoehe_;
+    std::string inhalt_;
+    int fassungsvermoegen_;
+    double fuellhoehe_;
 };
 
 class Vector : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "vecInit()";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "vecInit()";
+    }
 };
 
 class VectorMinMax : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "minMax( vector<double>& vec)";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "minMax( vector<double>& vec)";
+    }
 };
 
 class VectorReverse : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "reversed( vector<double>& v)";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "reversed( vector<double>& v)";
+    }
 };
 
 class VectorRound : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "roundVector(vector<double>& v) ";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "roundVector(vector<double>& v) ";
+    }
 };
 
 class ReverseStr : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "reverseString(string a)";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "reverseString(string a)";
+    }
 };
 
-class RemoveSpaces: public BaseFunction {
+class RemoveSpaces : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "removeSpaces(string a)";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "removeSpaces(string a)";
+    }
 };
 
 class RemoveLeadingSpaces : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "removeLeadingSpaces(string a)";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "removeLeadingSpaces(string a)";
+    }
 };
 
 class RemoveTrailingSpaces : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "removeTrailingSpaces(string a)";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "removeTrailingSpaces(string a)";
+    }
 };
 
 class CountNumsInString : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "countNumsInString(string a)";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "countNumsInString(string a)";
+    }
 };
 
 class Palindrome : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName()  {
-		return "isPalindrome(string a)";
-	}
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "isPalindrome(string a)";
+    }
 };
 
-class Lotto: public BaseFunction {
+class Lotto : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	void generateLottoNumbers(const std::vector<double>& targetNumbers);
-	string getName() ;
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    void GenerateLottoNumbers(const std::vector<double>& targetNumbers);
+    std::string GetName();
 };
+
 class Rekursion : public BaseFunction {
 public:
-	string execute(string& a);
-	string execute(vector<double>& userVector);
-	string getName() ;
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName();
 };
-unique_ptr<int[]> createArray(int a);
-void printArray(unique_ptr<int[]> a);
-unique_ptr<int[]> fillArray(unique_ptr<int[]> a);
+
+std::unique_ptr<int[]> CreateArray(int a);
+void PrintArray(std::unique_ptr<int[]> a);
+std::unique_ptr<int[]> FillArray(std::unique_ptr<int[]> a);
 
 template <typename... Args>
-void logOutput(Args&&... args);
-void logInput(std::string& input);
+void LogOutput(Args&&... args);
+
+void LogInput(std::string& input);
 
 class TicTacToe : public BaseFunction {
 public:
-	string execute(vector<double>& userVector);
-	string execute(string& a);
-	string getName() ;
+    std::string Execute(std::vector<double>& userVector);
+    std::string Execute(std::string& a);
+    std::string GetName();
 };

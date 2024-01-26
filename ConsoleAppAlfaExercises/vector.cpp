@@ -1,10 +1,11 @@
 #include "Header.h"
 
-string Vector::execute(string& a) {
-	return "";
+std::string Vector::Execute(std::string& a) {
+    return "";
 }
-string Vector::execute(vector<double>& userVector) {
-    // Methode 1: Initialisierung mit expliziten Werten
+
+std::string Vector::Execute(std::vector<double>& userVector) {
+    // Method 1: Initialization with explicit values
     std::vector<double> method1 = { 1.0, 2.5, 3.7, 4.2 };
 
     std::cout << "Method 1:" << std::endl;
@@ -13,7 +14,7 @@ string Vector::execute(vector<double>& userVector) {
     }
     std::cout << std::endl;
 
-    // Methode 2: Initialisierung mit einer bestimmten Anzahl an Elementen (Standardwert: 0.0)
+    // Method 2: Initialization with a specific number of elements (default value: 0.0)
     std::vector<double> method2(5);
 
     std::cout << "Method 2:" << std::endl;
@@ -22,7 +23,7 @@ string Vector::execute(vector<double>& userVector) {
     }
     std::cout << std::endl;
 
-    // Methode 3: Verwenden von push_back
+    // Method 3: Using push_back
     std::vector<double> method3;
     method3.push_back(2.0);
     method3.push_back(4.5);
@@ -33,15 +34,17 @@ string Vector::execute(vector<double>& userVector) {
         std::cout << value << " ";
     }
     std::cout << std::endl;
-    return"";
-}
-string VectorMinMax::execute(string& a) {
     return "";
 }
-string VectorMinMax::execute(vector<double>& userVector) {
+
+std::string VectorMinMax::Execute(std::string& a) {
+    return "";
+}
+
+std::string VectorMinMax::Execute(std::vector<double>& userVector) {
     if (userVector.empty()) {
-        // Wenn der Vektor leer ist, gib ein Paar mit beiden Werten als NaN zurück.
-        pair<double, double> result = std::make_pair(std::numeric_limits<double>::quiet_NaN(), std::numeric_limits<double>::quiet_NaN());
+        // If the vector is empty, return a pair with both values as NaN.
+        std::pair<double, double> result = { std::numeric_limits<double>::quiet_NaN(), std::numeric_limits<double>::quiet_NaN() };
         std::cout << "User Vector - Min: " << result.first << ", Max: " << result.second << std::endl;
         return "Vector empty";
     }
@@ -49,28 +52,29 @@ string VectorMinMax::execute(vector<double>& userVector) {
     double minVal = *std::min_element(userVector.begin(), userVector.end());
     double maxVal = *std::max_element(userVector.begin(), userVector.end());
 
-    pair<double, double> result = std::make_pair(minVal, maxVal);
+    std::pair<double, double> result = { minVal, maxVal };
     std::cout << "User Vector - Min: " << result.first << ", Max: " << result.second << std::endl;
     return "";
 }
 
-string VectorReverse::execute(string& a) {
+std::string VectorReverse::Execute(std::string& a) {
     return "";
 }
-string VectorReverse::execute(vector<double>& userVector) {
+
+std::string VectorReverse::Execute(std::vector<double>& userVector) {
     std::cout << "Original Vector: ";
     for (double value : userVector) {
         std::cout << value << " ";
     }
     std::vector<double> reversedVector;
 
-    // Überprüfen, ob der Eingabevektor leer ist
+    // Check if the input vector is empty
     if (userVector.empty()) {
         std::cout << "Vector is empty." << std::endl;
         return "";
     }
 
-    // Kopieren der Elemente in umgekehrter Reihenfolge
+    // Copy elements in reverse order
     for (auto it = userVector.rbegin(); it != userVector.rend(); ++it) {
         reversedVector.push_back(*it);
     }
@@ -78,14 +82,14 @@ string VectorReverse::execute(vector<double>& userVector) {
     for (double value : reversedVector) {
         std::cout << value << " ";
     }
-    return"";
+    return "";
 }
-string VectorRound::execute(string& a) {
-   return "";
-}
-string VectorRound::execute(vector<double>& userVector) {
-    std::vector<double> roundedVector;
 
+std::string VectorRound::Execute(std::string& a) {
+    return "";
+}
+
+std::string VectorRound::Execute(std::vector<double>& userVector) {
     std::cout << "Original Vector: ";
     for (double value : userVector) {
         std::cout << value << " ";
@@ -99,5 +103,5 @@ string VectorRound::execute(vector<double>& userVector) {
     for (double value : userVector) {
         std::cout << value << " ";
     }
-    return"";
+    return "";
 }

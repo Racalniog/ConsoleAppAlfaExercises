@@ -3,7 +3,7 @@
 // Function to log current time and message to a file WIP
 
 // Function to get the current timestamp as a string
-std::string getCurrentTimestamp() {
+std::string GetCurrentTimestamp() {
     auto now = std::chrono::system_clock::now();
     std::time_t now_c = std::chrono::system_clock::to_time_t(now);
 
@@ -17,18 +17,18 @@ std::string getCurrentTimestamp() {
 
 
 template <typename... Args>
-void logOutput(Args&&... args) {
+void LogOutput(Args&&... args) {
     std::ostringstream oss;
-    oss << getCurrentTimestamp() << " ";
+    oss << GetCurrentTimestamp() << " ";
     (oss << ... << std::forward<Args>(args));
 
     std::cout << oss.str();
     logFile << oss.str();
 }
 
-void logInput(std::string& input) {
+void LogInput(std::string& input) {
     std::getline(std::cin, input);
-    logFile << getCurrentTimestamp() << " Input: " << input << std::endl;
+    logFile << GetCurrentTimestamp() << " Input: " << input << std::endl;
 }
 
 //int main() {
