@@ -5,31 +5,28 @@ std::string Vector::Execute(std::string& a) {
 }
 
 std::string Vector::Execute(std::vector<double>& userVector) {
-    // Method 1: Initialization with explicit values
     std::vector<double> method1 = { 1.0, 2.5, 3.7, 4.2 };
 
-    std::cout << "Method 1:" << std::endl;
+    std::cout << "Method 1: Initialization with explicit values" << std::endl;
     for (double value : method1) {
         std::cout << value << " ";
     }
     std::cout << std::endl;
 
-    // Method 2: Initialization with a specific number of elements (default value: 0.0)
     std::vector<double> method2(5);
 
-    std::cout << "Method 2:" << std::endl;
+    std::cout << "Method 2: Initialization with a specific number of elements (default value: 0.0)" << std::endl;
     for (double value : method2) {
         std::cout << value << " ";
     }
     std::cout << std::endl;
 
-    // Method 3: Using push_back
     std::vector<double> method3;
     method3.push_back(2.0);
     method3.push_back(4.5);
     method3.push_back(6.3);
 
-    std::cout << "Method 3:" << std::endl;
+    std::cout << "Method 3: Using push_back" << std::endl;
     for (double value : method3) {
         std::cout << value << " ";
     }
@@ -68,13 +65,11 @@ std::string VectorReverse::Execute(std::vector<double>& userVector) {
     }
     std::vector<double> reversedVector;
 
-    // Check if the input vector is empty
     if (userVector.empty()) {
         std::cout << "Vector is empty." << std::endl;
         return "";
     }
 
-    // Copy elements in reverse order
     for (auto it = userVector.rbegin(); it != userVector.rend(); ++it) {
         reversedVector.push_back(*it);
     }

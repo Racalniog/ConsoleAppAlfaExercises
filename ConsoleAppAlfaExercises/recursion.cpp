@@ -5,7 +5,7 @@ std::string Rekursion::GetName() {
 	return "fibN(int i)";
 }
 
-int fibonacciRecursive(int n) {
+size_t fibonacciRecursive(int n) {
     if (n <= 1) {
         return n;
     }
@@ -17,7 +17,7 @@ std::string Rekursion::Execute(std::string& x) {
     return "";
 }
 std::string Rekursion::Execute(std::vector<double>& x) {
-    std::cout << fibonacciRecursive(x[0]);
+    std::cout << fibonacciRecursive(static_cast<int> (x[0]));
 
 	return "";
 }

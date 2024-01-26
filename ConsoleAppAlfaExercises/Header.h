@@ -1,6 +1,5 @@
 #pragma once
 
-// TODO: Fit input better to all exceptional functions!
 #include <iostream>
 #include <fstream>
 #include <string>

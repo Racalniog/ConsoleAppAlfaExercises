@@ -1,6 +1,9 @@
 #include "Header.h"
 
-// TODO: Clean code, fix time taking, and logging
+/*  
+TODO: Clean code, fix time taking, and logging
+Fit input better to all exceptional functions!
+*/
 std::ofstream logFile("log.txt", std::ios::out | std::ios::app);
 
 int main() {
@@ -101,6 +104,4 @@ int main() {
     }
 
     std::cout << "Quitting app" << std::endl;
-
-    return 0;
 }
