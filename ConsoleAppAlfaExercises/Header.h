@@ -16,8 +16,6 @@
 #include <ctime>
 #include <thread>
 
-#include "Becher.h"
-
 extern std::ofstream logFile;
 
 std::vector<std::pair<std::string, std::string>> ExtractParameters(const std::string& functionSignature);
@@ -45,6 +43,18 @@ private:
     std::string inhalt_;
     int fassungsvermoegen_;
     double fuellhoehe_;
+};
+
+class BecherAufdruck : public Becher {
+public:
+    BecherAufdruck(const std::string& inhalt, int fassungsvermoegen, std::string aufdruck);
+    BecherAufdruck() = default;
+    std::string GetName();
+    std::string Execute(std::vector<double>& userVector);
+    std::string getAufdruck() const;
+
+private:
+    std::string aufdruck_;
 };
 
 class Vector : public BaseFunction {

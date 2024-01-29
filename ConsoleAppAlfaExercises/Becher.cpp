@@ -1,5 +1,38 @@
 #include "Header.h"
 
+BecherAufdruck::BecherAufdruck(const std::string& inhalt, int fassungsvermoegen, std::string aufdruck) :
+    Becher(inhalt,fassungsvermoegen), aufdruck_(aufdruck){}
+
+std::string BecherAufdruck::getAufdruck() const{
+    return aufdruck_;
+}
+
+std::string BecherAufdruck::Execute(std::vector<double>& x) {
+    std::vector<Becher> Bechers;
+    std::vector<BecherAufdruck> BechersAufdruck;
+
+    Becher kaffeeBecher("Kaffee", 250);
+    BecherAufdruck wowBecher("Wowsauce", 100, "WOW");
+    wowBecher.Auffuellen();
+    for (size_t i = 0; i < 5; i++)
+    {
+        Bechers.push_back(kaffeeBecher);
+        BechersAufdruck.push_back(wowBecher);
+    }
+    
+    for (size_t i = 0; i < 5; i++)
+    {
+        Bechers[i].Leertrinken();
+        Bechers[i].ZeigeInformationen();
+        BechersAufdruck[i].Leertrinken();
+        BechersAufdruck[i].ZeigeInformationen();
+        BechersAufdruck[i].getAufdruck();
+    }
+    return "";
+}
+std::string BecherAufdruck::GetName() {
+    return "BecherAufdruck Klasse";
+}
 std::string Becher::GetName() {
     return "Becher Klasse";
 }

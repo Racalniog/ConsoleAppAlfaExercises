@@ -26,6 +26,8 @@ int main() {
     functions.emplace_back(std::make_unique<VectorRound>());
     functions.emplace_back(std::make_unique<Rekursion>());
     functions.emplace_back(std::make_unique<Becher>());
+    functions.emplace_back(std::make_unique<BecherAufdruck>());
+
 
     while (true) {
         std::cout << "Choose a function (0, 1, 2...) or type 'q' to quit.\n";
