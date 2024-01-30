@@ -166,9 +166,29 @@ std::unique_ptr<int[]> CreateArray(int a);
 void PrintArray(std::unique_ptr<int[]> a);
 std::unique_ptr<int[]> FillArray(std::unique_ptr<int[]> a);
 
+std::string GetCurrentTimestamp();
 template <typename... Args>
-void LogOutput(Args&&... args);
+void LogOutput(Args&&... args) {
+    std::ostringstream oss;
+    oss << GetCurrentTimestamp() << " ";
+    (oss << ... << std::forward<Args>(args));
 
+    std::cout << oss.str();
+    logFile << oss.str();
+}
+template <typename... Args>
+void PrintNoTimeLogOutput(Args&&... args) {
+    std::ostringstream oss;
+    std::ostringstream oss2;
+
+    (oss << ... << std::forward<Args>(args));
+    oss2 << GetCurrentTimestamp() << " ";
+    (oss2 << ... << std::forward<Args>(args));
+
+
+    std::cout << oss.str();
+    logFile << oss2.str();
+}
 void LogInput(std::string& input);
 
 class TicTacToe : public BaseFunction {

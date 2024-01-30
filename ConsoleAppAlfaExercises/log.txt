@@ -1,0 +1,209 @@
+2024-01-30 07:37:28 write in file
+2024-01-30 07:37:28 Enter some input: 2024-01-30 07:37:43 Input: wdawdawd
+2024-01-30 07:37:43 Value of x: 42 test2024-01-30 07:54:59 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 07:59:17 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:01:56 --------------------------------------------------------------------------
+Application started
+2024-01-30 08:01:56 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:01:56 0. reverseString(string a)	2024-01-30 08:01:56 1. removeSpaces(string a)	2024-01-30 08:01:56 2. countNumsInString(string a)	2024-01-30 08:01:56 3. removeLeadingSpaces(string a)	2024-01-30 08:01:56 4. removeTrailingSpaces(string a)	2024-01-30 08:01:56 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:01:56 6. playTicTacToe()	2024-01-30 08:01:56 7. isPalindrome(string a)	2024-01-30 08:01:56 8. vecInit()	2024-01-30 08:01:56 9. minMax( vector<double>& vec)	2024-01-30 08:01:56 10. reversed( vector<double>& v)	2024-01-30 08:01:56 11. roundVector(vector<double>& v) 	2024-01-30 08:01:56 12. fibN(int i)	2024-01-30 08:01:56 13. Becher Klasse	2024-01-30 08:01:56 14. BecherAufdruck Klasse	2024-01-30 08:02:18 --------------------------------------------------------------------------
+Application started
+2024-01-30 08:02:18 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:02:18 0. reverseString(string a)	2024-01-30 08:02:18 1. removeSpaces(string a)	2024-01-30 08:02:18 2. countNumsInString(string a)	2024-01-30 08:02:18 3. removeLeadingSpaces(string a)	2024-01-30 08:02:18 4. removeTrailingSpaces(string a)	2024-01-30 08:02:18 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:02:18 6. playTicTacToe()	2024-01-30 08:02:18 7. isPalindrome(string a)	2024-01-30 08:02:18 8. vecInit()	2024-01-30 08:02:18 9. minMax( vector<double>& vec)	2024-01-30 08:02:18 10. reversed( vector<double>& v)	2024-01-30 08:02:18 11. roundVector(vector<double>& v) 	2024-01-30 08:02:18 12. fibN(int i)	2024-01-30 08:02:18 13. Becher Klasse	2024-01-30 08:02:18 14. BecherAufdruck Klasse	2024-01-30 08:08:58 --------------------------------------------------------------------------
+Application started
+2024-01-30 08:08:58 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:08:58 0. reverseString(string a)	2024-01-30 08:08:58 1. removeSpaces(string a)	2024-01-30 08:08:58 2. countNumsInString(string a)	2024-01-30 08:08:58 
+2024-01-30 08:08:58 3. removeLeadingSpaces(string a)	2024-01-30 08:08:58 4. removeTrailingSpaces(string a)	2024-01-30 08:08:58 
+2024-01-30 08:08:58 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:08:58 6. playTicTacToe()	2024-01-30 08:08:58 
+2024-01-30 08:08:58 7. isPalindrome(string a)	2024-01-30 08:08:58 8. vecInit()	2024-01-30 08:08:58 
+2024-01-30 08:08:58 9. minMax( vector<double>& vec)	2024-01-30 08:08:58 10. reversed( vector<double>& v)	2024-01-30 08:08:58 
+2024-01-30 08:08:58 11. roundVector(vector<double>& v) 	2024-01-30 08:08:58 12. fibN(int i)	2024-01-30 08:08:58 
+2024-01-30 08:08:58 13. Becher Klasse	2024-01-30 08:08:58 14. BecherAufdruck Klasse	2024-01-30 08:08:58 
+2024-01-30 08:08:58 
+2024-01-30 08:09:04 Input: 0
+2024-01-30 08:09:04 Enter 1 parameter(s) for reverseString(string a) to manipulate: 2024-01-30 08:09:05 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:09:05 0. reverseString(string a)	2024-01-30 08:09:05 1. removeSpaces(string a)	2024-01-30 08:09:05 2. countNumsInString(string a)	2024-01-30 08:09:05 
+2024-01-30 08:09:05 3. removeLeadingSpaces(string a)	2024-01-30 08:09:05 4. removeTrailingSpaces(string a)	2024-01-30 08:09:05 
+2024-01-30 08:09:05 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:09:05 6. playTicTacToe()	2024-01-30 08:09:05 
+2024-01-30 08:09:05 7. isPalindrome(string a)	2024-01-30 08:09:05 8. vecInit()	2024-01-30 08:09:05 
+2024-01-30 08:09:05 9. minMax( vector<double>& vec)	2024-01-30 08:09:05 10. reversed( vector<double>& v)	2024-01-30 08:09:05 
+2024-01-30 08:09:05 11. roundVector(vector<double>& v) 	2024-01-30 08:09:05 12. fibN(int i)	2024-01-30 08:09:05 
+2024-01-30 08:09:05 13. Becher Klasse	2024-01-30 08:09:05 14. BecherAufdruck Klasse	2024-01-30 08:09:05 
+2024-01-30 08:09:05 
+2024-01-30 08:09:08 Input: q
+2024-01-30 08:13:10 --------------------------------------------------------------------------
+Application started
+2024-01-30 08:13:11 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:13:11 0. reverseString(string a)	2024-01-30 08:13:11 1. removeSpaces(string a)	2024-01-30 08:13:11 2. countNumsInString(string a)	2024-01-30 08:13:11 
+2024-01-30 08:13:11 3. removeLeadingSpaces(string a)	2024-01-30 08:13:11 4. removeTrailingSpaces(string a)	2024-01-30 08:13:11 
+2024-01-30 08:13:11 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:13:11 6. playTicTacToe()	2024-01-30 08:13:11 
+2024-01-30 08:13:11 7. isPalindrome(string a)	2024-01-30 08:13:11 8. vecInit()	2024-01-30 08:13:11 
+2024-01-30 08:13:11 9. minMax( vector<double>& vec)	2024-01-30 08:13:11 10. reversed( vector<double>& v)	2024-01-30 08:13:11 
+2024-01-30 08:13:11 11. roundVector(vector<double>& v) 	2024-01-30 08:13:11 12. fibN(int i)	2024-01-30 08:13:11 
+2024-01-30 08:13:11 13. Becher Klasse	2024-01-30 08:13:11 14. BecherAufdruck Klasse	2024-01-30 08:13:11 
+2024-01-30 08:13:11 
+2024-01-30 08:13:14 Input: 0
+2024-01-30 08:13:14 Enter 1 parameter(s) for reverseString(string a) to manipulate: 2024-01-30 08:13:16 Input: test
+2024-01-30 08:13:16 t2024-01-30 08:13:16 s2024-01-30 08:13:16 e2024-01-30 08:13:16 t2024-01-30 08:13:16 
+ Time taken by function: 0 minutes 624248 microseconds
+
+2024-01-30 08:13:16 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:13:16 0. reverseString(string a)	2024-01-30 08:13:16 1. removeSpaces(string a)	2024-01-30 08:13:16 2. countNumsInString(string a)	2024-01-30 08:13:16 
+2024-01-30 08:13:16 3. removeLeadingSpaces(string a)	2024-01-30 08:13:16 4. removeTrailingSpaces(string a)	2024-01-30 08:13:16 
+2024-01-30 08:13:16 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:13:16 6. playTicTacToe()	2024-01-30 08:13:16 
+2024-01-30 08:13:16 7. isPalindrome(string a)	2024-01-30 08:13:16 8. vecInit()	2024-01-30 08:13:16 
+2024-01-30 08:13:16 9. minMax( vector<double>& vec)	2024-01-30 08:13:16 10. reversed( vector<double>& v)	2024-01-30 08:13:16 
+2024-01-30 08:13:16 11. roundVector(vector<double>& v) 	2024-01-30 08:13:16 12. fibN(int i)	2024-01-30 08:13:16 
+2024-01-30 08:13:16 13. Becher Klasse	2024-01-30 08:13:16 14. BecherAufdruck Klasse	2024-01-30 08:13:16 
+2024-01-30 08:13:16 
+2024-01-30 08:16:53 Input: q
+2024-01-30 08:16:53 Quitting app
+2024-01-30 08:20:51 --------------------------------------------------------------------------
+Application started
+2024-01-30 08:20:51 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:20:51 0. reverseString(string a)	2024-01-30 08:20:51 1. removeSpaces(string a)	2024-01-30 08:20:51 2. countNumsInString(string a)	2024-01-30 08:20:51 
+2024-01-30 08:20:51 3. removeLeadingSpaces(string a)	2024-01-30 08:20:51 4. removeTrailingSpaces(string a)	2024-01-30 08:20:51 
+2024-01-30 08:20:51 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:20:51 6. playTicTacToe()	2024-01-30 08:20:51 
+2024-01-30 08:20:51 7. isPalindrome(string a)	2024-01-30 08:20:51 8. vecInit()	2024-01-30 08:20:51 
+2024-01-30 08:20:51 9. minMax( vector<double>& vec)	2024-01-30 08:20:51 10. reversed( vector<double>& v)	2024-01-30 08:20:51 
+2024-01-30 08:20:51 11. roundVector(vector<double>& v) 	2024-01-30 08:20:51 12. fibN(int i)	2024-01-30 08:20:51 
+2024-01-30 08:20:51 13. Becher Klasse	2024-01-30 08:20:51 14. BecherAufdruck Klasse	2024-01-30 08:20:51 
+2024-01-30 08:20:51 
+2024-01-30 08:20:59 Input: 0
+2024-01-30 08:20:59 Enter 1 parameter(s) for reverseString(string a) to manipulate: 2024-01-30 08:21:01 Input: est
+2024-01-30 08:21:01 t2024-01-30 08:21:01 s2024-01-30 08:21:01 e2024-01-30 08:21:01 
+ Time taken by function: 0 minutes 964329 microseconds
+
+2024-01-30 08:21:01 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:21:01 0. reverseString(string a)	2024-01-30 08:21:01 1. removeSpaces(string a)	2024-01-30 08:21:01 2. countNumsInString(string a)	2024-01-30 08:21:01 
+2024-01-30 08:21:01 3. removeLeadingSpaces(string a)	2024-01-30 08:21:01 4. removeTrailingSpaces(string a)	2024-01-30 08:21:01 
+2024-01-30 08:21:01 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:21:01 6. playTicTacToe()	2024-01-30 08:21:01 
+2024-01-30 08:21:01 7. isPalindrome(string a)	2024-01-30 08:21:01 8. vecInit()	2024-01-30 08:21:01 
+2024-01-30 08:21:01 9. minMax( vector<double>& vec)	2024-01-30 08:21:01 10. reversed( vector<double>& v)	2024-01-30 08:21:01 
+2024-01-30 08:21:01 11. roundVector(vector<double>& v) 	2024-01-30 08:21:01 12. fibN(int i)	2024-01-30 08:21:01 
+2024-01-30 08:21:01 13. Becher Klasse	2024-01-30 08:21:01 14. BecherAufdruck Klasse	2024-01-30 08:21:01 
+2024-01-30 08:21:01 
+2024-01-30 08:21:10 Input: q
+2024-01-30 08:21:10 Quitting app
+2024-01-30 08:22:23 --------------------------------------------------------------------------
+Application started
+2024-01-30 08:22:23 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:22:23 0. reverseString(string a)	2024-01-30 08:22:23 1. removeSpaces(string a)	2024-01-30 08:22:23 2. countNumsInString(string a)	2024-01-30 08:22:23 
+2024-01-30 08:22:23 3. removeLeadingSpaces(string a)	2024-01-30 08:22:23 4. removeTrailingSpaces(string a)	2024-01-30 08:22:23 
+2024-01-30 08:22:23 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:22:23 6. playTicTacToe()	2024-01-30 08:22:23 
+2024-01-30 08:22:23 7. isPalindrome(string a)	2024-01-30 08:22:23 8. vecInit()	2024-01-30 08:22:23 
+2024-01-30 08:22:23 9. minMax( vector<double>& vec)	2024-01-30 08:22:23 10. reversed( vector<double>& v)	2024-01-30 08:22:23 
+2024-01-30 08:22:23 11. roundVector(vector<double>& v) 	2024-01-30 08:22:23 12. fibN(int i)	2024-01-30 08:22:23 
+2024-01-30 08:22:23 13. Becher Klasse	2024-01-30 08:22:23 14. BecherAufdruck Klasse	2024-01-30 08:22:23 
+2024-01-30 08:22:23 
+2024-01-30 08:22:30 Input: 0
+2024-01-30 08:22:30 Enter 1 parameter(s) for reverseString(string a) to manipulate: 2024-01-30 08:22:31 Input: test
+2024-01-30 08:22:31 t2024-01-30 08:22:31 s2024-01-30 08:22:31 e2024-01-30 08:22:31 t2024-01-30 08:22:31 
+ Time taken by function: 0 minutes 72098 microseconds
+
+2024-01-30 08:22:31 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:22:31 0. reverseString(string a)	2024-01-30 08:22:31 1. removeSpaces(string a)	2024-01-30 08:22:31 2. countNumsInString(string a)	2024-01-30 08:22:31 
+2024-01-30 08:22:31 3. removeLeadingSpaces(string a)	2024-01-30 08:22:31 4. removeTrailingSpaces(string a)	2024-01-30 08:22:31 
+2024-01-30 08:22:31 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:22:31 6. playTicTacToe()	2024-01-30 08:22:31 
+2024-01-30 08:22:31 7. isPalindrome(string a)	2024-01-30 08:22:31 8. vecInit()	2024-01-30 08:22:31 
+2024-01-30 08:22:31 9. minMax( vector<double>& vec)	2024-01-30 08:22:31 10. reversed( vector<double>& v)	2024-01-30 08:22:31 
+2024-01-30 08:22:31 11. roundVector(vector<double>& v) 	2024-01-30 08:22:31 12. fibN(int i)	2024-01-30 08:22:31 
+2024-01-30 08:22:31 13. Becher Klasse	2024-01-30 08:22:31 14. BecherAufdruck Klasse	2024-01-30 08:22:31 
+2024-01-30 08:22:31 
+2024-01-30 08:24:47 Input: q
+2024-01-30 08:24:47 Quitting app
+2024-01-30 08:24:50 --------------------------------------------------------------------------
+Application started
+2024-01-30 08:24:50 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:24:50 0. reverseString(string a)	2024-01-30 08:24:50 1. removeSpaces(string a)	2024-01-30 08:24:50 2. countNumsInString(string a)	2024-01-30 08:24:50 
+2024-01-30 08:24:50 3. removeLeadingSpaces(string a)	2024-01-30 08:24:50 4. removeTrailingSpaces(string a)	2024-01-30 08:24:50 
+2024-01-30 08:24:50 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:24:50 6. playTicTacToe()	2024-01-30 08:24:50 
+2024-01-30 08:24:50 7. isPalindrome(string a)	2024-01-30 08:24:50 8. vecInit()	2024-01-30 08:24:50 
+2024-01-30 08:24:50 9. minMax( vector<double>& vec)	2024-01-30 08:24:50 10. reversed( vector<double>& v)	2024-01-30 08:24:50 
+2024-01-30 08:24:50 11. roundVector(vector<double>& v) 	2024-01-30 08:24:50 12. fibN(int i)	2024-01-30 08:24:50 
+2024-01-30 08:24:50 13. Becher Klasse	2024-01-30 08:24:50 14. BecherAufdruck Klasse	2024-01-30 08:24:50 
+2024-01-30 08:24:50 
+2024-01-30 08:24:54 Input: 0
+2024-01-30 08:24:54 Enter 1 parameter(s) for reverseString(string a) to manipulate: 2024-01-30 08:24:56 Input: test
+2024-01-30 08:24:56 t2024-01-30 08:24:56 s2024-01-30 08:24:56 e2024-01-30 08:24:56 t2024-01-30 08:24:56 
+ Time taken by function: 0 minutes 752670 microseconds
+
+2024-01-30 08:24:56 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:24:56 0. reverseString(string a)	2024-01-30 08:24:56 1. removeSpaces(string a)	2024-01-30 08:24:56 2. countNumsInString(string a)	2024-01-30 08:24:56 
+2024-01-30 08:24:56 3. removeLeadingSpaces(string a)	2024-01-30 08:24:56 4. removeTrailingSpaces(string a)	2024-01-30 08:24:56 
+2024-01-30 08:24:56 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:24:56 6. playTicTacToe()	2024-01-30 08:24:56 
+2024-01-30 08:24:56 7. isPalindrome(string a)	2024-01-30 08:24:56 8. vecInit()	2024-01-30 08:24:56 
+2024-01-30 08:24:56 9. minMax( vector<double>& vec)	2024-01-30 08:24:56 10. reversed( vector<double>& v)	2024-01-30 08:24:56 
+2024-01-30 08:24:56 11. roundVector(vector<double>& v) 	2024-01-30 08:24:56 12. fibN(int i)	2024-01-30 08:24:56 
+2024-01-30 08:24:56 13. Becher Klasse	2024-01-30 08:24:56 14. BecherAufdruck Klasse	2024-01-30 08:24:56 
+2024-01-30 08:24:56 
+2024-01-30 08:25:04 Input: 1
+2024-01-30 08:25:04 Enter 1 parameter(s) for removeSpaces(string a) to manipulate: 2024-01-30 08:25:06 Input: adwda awdawd
+2024-01-30 08:25:06 a2024-01-30 08:25:06 d2024-01-30 08:25:06 w2024-01-30 08:25:06 d2024-01-30 08:25:06 a2024-01-30 08:25:06 a2024-01-30 08:25:06 w2024-01-30 08:25:06 d2024-01-30 08:25:06 a2024-01-30 08:25:06 w2024-01-30 08:25:06 d2024-01-30 08:25:06 
+ Time taken by function: 0 minutes 964445 microseconds
+
+2024-01-30 08:25:06 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:25:06 0. reverseString(string a)	2024-01-30 08:25:06 1. removeSpaces(string a)	2024-01-30 08:25:06 2. countNumsInString(string a)	2024-01-30 08:25:06 
+2024-01-30 08:25:06 3. removeLeadingSpaces(string a)	2024-01-30 08:25:06 4. removeTrailingSpaces(string a)	2024-01-30 08:25:06 
+2024-01-30 08:25:06 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:25:06 6. playTicTacToe()	2024-01-30 08:25:06 
+2024-01-30 08:25:06 7. isPalindrome(string a)	2024-01-30 08:25:06 8. vecInit()	2024-01-30 08:25:06 
+2024-01-30 08:25:06 9. minMax( vector<double>& vec)	2024-01-30 08:25:06 10. reversed( vector<double>& v)	2024-01-30 08:25:06 
+2024-01-30 08:25:06 11. roundVector(vector<double>& v) 	2024-01-30 08:25:06 12. fibN(int i)	2024-01-30 08:25:06 
+2024-01-30 08:25:06 13. Becher Klasse	2024-01-30 08:25:06 14. BecherAufdruck Klasse	2024-01-30 08:25:06 
+2024-01-30 08:25:06 
+2024-01-30 08:25:10 Input: q
+2024-01-30 08:25:10 Quitting app
+2024-01-30 08:26:01 --------------------------------------------------------------------------
+Application started
+2024-01-30 08:26:01 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:26:01 0. reverseString(string a)	2024-01-30 08:26:01 1. removeSpaces(string a)	2024-01-30 08:26:01 2. countNumsInString(string a)	2024-01-30 08:26:01 
+2024-01-30 08:26:01 3. removeLeadingSpaces(string a)	2024-01-30 08:26:01 4. removeTrailingSpaces(string a)	2024-01-30 08:26:01 
+2024-01-30 08:26:01 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:26:01 6. playTicTacToe()	2024-01-30 08:26:01 
+2024-01-30 08:26:01 7. isPalindrome(string a)	2024-01-30 08:26:01 8. vecInit()	2024-01-30 08:26:01 
+2024-01-30 08:26:01 9. minMax( vector<double>& vec)	2024-01-30 08:26:01 10. reversed( vector<double>& v)	2024-01-30 08:26:01 
+2024-01-30 08:26:01 11. roundVector(vector<double>& v) 	2024-01-30 08:26:01 12. fibN(int i)	2024-01-30 08:26:01 
+2024-01-30 08:26:01 13. Becher Klasse	2024-01-30 08:26:01 14. BecherAufdruck Klasse	2024-01-30 08:26:01 
+2024-01-30 08:26:01 
+2024-01-30 08:26:03 Input: 0
+2024-01-30 08:26:03 Enter 1 parameter(s) for reverseString(string a) to manipulate: 2024-01-30 08:26:05 Input: test
+2024-01-30 08:26:05 t2024-01-30 08:26:05 s2024-01-30 08:26:05 e2024-01-30 08:26:05 t2024-01-30 08:26:05 
+ Time taken by function: 0 minutes 46275 microseconds
+
+2024-01-30 08:26:05 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:26:05 0. reverseString(string a)	2024-01-30 08:26:05 1. removeSpaces(string a)	2024-01-30 08:26:05 2. countNumsInString(string a)	2024-01-30 08:26:05 
+2024-01-30 08:26:05 3. removeLeadingSpaces(string a)	2024-01-30 08:26:05 4. removeTrailingSpaces(string a)	2024-01-30 08:26:05 
+2024-01-30 08:26:05 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:26:05 6. playTicTacToe()	2024-01-30 08:26:05 
+2024-01-30 08:26:05 7. isPalindrome(string a)	2024-01-30 08:26:05 8. vecInit()	2024-01-30 08:26:05 
+2024-01-30 08:26:05 9. minMax( vector<double>& vec)	2024-01-30 08:26:05 10. reversed( vector<double>& v)	2024-01-30 08:26:05 
+2024-01-30 08:26:05 11. roundVector(vector<double>& v) 	2024-01-30 08:26:05 12. fibN(int i)	2024-01-30 08:26:05 
+2024-01-30 08:26:05 13. Becher Klasse	2024-01-30 08:26:05 14. BecherAufdruck Klasse	2024-01-30 08:26:05 
+2024-01-30 08:26:05 
+2024-01-30 08:26:17 Input: 1
+2024-01-30 08:26:17 Enter 1 parameter(s) for removeSpaces(string a) to manipulate: 2024-01-30 08:26:19 Input: serser serser
+2024-01-30 08:26:19 s2024-01-30 08:26:19 e2024-01-30 08:26:19 r2024-01-30 08:26:19 s2024-01-30 08:26:19 e2024-01-30 08:26:19 r2024-01-30 08:26:19 s2024-01-30 08:26:19 e2024-01-30 08:26:19 r2024-01-30 08:26:19 s2024-01-30 08:26:19 e2024-01-30 08:26:19 r2024-01-30 08:26:19 
+ Time taken by function: 0 minutes 126394 microseconds
+
+2024-01-30 08:26:19 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:26:19 0. reverseString(string a)	2024-01-30 08:26:19 1. removeSpaces(string a)	2024-01-30 08:26:19 2. countNumsInString(string a)	2024-01-30 08:26:19 
+2024-01-30 08:26:19 3. removeLeadingSpaces(string a)	2024-01-30 08:26:19 4. removeTrailingSpaces(string a)	2024-01-30 08:26:19 
+2024-01-30 08:26:19 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:26:19 6. playTicTacToe()	2024-01-30 08:26:19 
+2024-01-30 08:26:19 7. isPalindrome(string a)	2024-01-30 08:26:19 8. vecInit()	2024-01-30 08:26:19 
+2024-01-30 08:26:19 9. minMax( vector<double>& vec)	2024-01-30 08:26:19 10. reversed( vector<double>& v)	2024-01-30 08:26:19 
+2024-01-30 08:26:19 11. roundVector(vector<double>& v) 	2024-01-30 08:26:19 12. fibN(int i)	2024-01-30 08:26:19 
+2024-01-30 08:26:19 13. Becher Klasse	2024-01-30 08:26:19 14. BecherAufdruck Klasse	2024-01-30 08:26:19 
+2024-01-30 08:26:19 
+2024-01-30 08:27:20 Input: 9
+2024-01-30 08:27:20 Enter 0 parameter(s) for minMax( vector<double>& vec) to manipulate: 2024-01-30 08:27:20 Enter numbers separated by space: 2024-01-30 08:27:24 Input: 1 2 3
+2024-01-30 08:27:24 
+ Time taken by function: 0 minutes 32447 microseconds
+
+2024-01-30 08:27:24 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-01-30 08:27:24 0. reverseString(string a)	2024-01-30 08:27:24 1. removeSpaces(string a)	2024-01-30 08:27:24 2. countNumsInString(string a)	2024-01-30 08:27:24 
+2024-01-30 08:27:24 3. removeLeadingSpaces(string a)	2024-01-30 08:27:24 4. removeTrailingSpaces(string a)	2024-01-30 08:27:24 
+2024-01-30 08:27:24 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-01-30 08:27:24 6. playTicTacToe()	2024-01-30 08:27:24 
+2024-01-30 08:27:24 7. isPalindrome(string a)	2024-01-30 08:27:24 8. vecInit()	2024-01-30 08:27:24 
+2024-01-30 08:27:24 9. minMax( vector<double>& vec)	2024-01-30 08:27:24 10. reversed( vector<double>& v)	2024-01-30 08:27:24 
+2024-01-30 08:27:24 11. roundVector(vector<double>& v) 	2024-01-30 08:27:24 12. fibN(int i)	2024-01-30 08:27:24 
+2024-01-30 08:27:24 13. Becher Klasse	2024-01-30 08:27:24 14. BecherAufdruck Klasse	2024-01-30 08:27:24 
+2024-01-30 08:27:24 
+2024-01-30 08:27:37 Input: q
+2024-01-30 08:27:37 Quitting app
