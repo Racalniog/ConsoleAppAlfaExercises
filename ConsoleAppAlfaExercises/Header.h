@@ -15,11 +15,13 @@
 #include <regex>
 #include <ctime>
 #include <thread>
+#include <cmath>
 
 extern std::ofstream logFile;
 
 std::vector<std::pair<std::string, std::string>> ExtractParameters(const std::string& functionSignature);
-
+//TODO fix rule that all hardcoded function names go into the class definition
+//abstact class for circumventing missing reflections by hardcoding function names to show user
 class BaseFunction {
 public:
     virtual std::string Execute(std::string& str) = 0;
@@ -197,3 +199,52 @@ public:
     std::string Execute(std::string& a);
     std::string GetName();
 };
+
+class Shape : public BaseFunction{
+public:
+    virtual double circumference() const = 0;
+    virtual double area() const = 0;
+    virtual double lateralSurfaceArea() const = 0;
+    virtual double volume() const = 0;
+    virtual void printInfo() const = 0;
+};
+
+class Circle : public Shape {
+private:
+    double radius;
+
+public:
+    Circle() = default;
+    Circle(double r);
+    double circumference() const override;
+    double area() const override;
+    double lateralSurfaceArea() const override;
+    double volume() const override;
+    void printInfo() const override;
+    std::string Execute(std::vector<double>& userVector);
+    std::string Execute(std::string& a);
+    std::string GetName() {
+        return "Circle(double radius)";
+    }
+};
+
+class Cylinder : public Shape {
+private:
+    double radius;
+    double height;
+
+public:
+    Cylinder() = default;
+    Cylinder(double r, double h);
+    double circumference() const override;
+    double area() const override;
+    double lateralSurfaceArea() const override;
+    double volume() const override;
+    void printInfo() const override;
+    std::string Execute(std::vector<double>& userVector);
+    std::string Execute(std::string& a);
+    std::string GetName() {
+        return "Cylinder(double radius, double height)";
+    }
+};
+

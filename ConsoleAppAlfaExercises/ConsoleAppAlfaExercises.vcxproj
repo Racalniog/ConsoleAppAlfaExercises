@@ -134,6 +134,7 @@
     <ClCompile Include="englishTranslator.cpp" />
     <ClCompile Include="logging.cpp" />
     <ClCompile Include="recursion.cpp" />
+    <ClCompile Include="Shape.cpp" />
     <ClCompile Include="TicTacToe.cpp" />
     <ClCompile Include="stringFuncs.cpp" />
     <ClCompile Include="unitTests.cpp" />

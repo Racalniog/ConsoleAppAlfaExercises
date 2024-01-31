@@ -1,7 +1,7 @@
 #include "Header.h"
 
 /*  
-TODO: Clean code, fix time taking
+TODO: Clean code, fix time taking, fix output and logging format, use format for output, unit tests
 Fit input better to all exceptional functions!
 */
 std::ofstream logFile("log.txt", std::ios::out | std::ios::app);
@@ -27,7 +27,8 @@ int main() {
     functions.emplace_back(std::make_unique<Rekursion>());
     functions.emplace_back(std::make_unique<Becher>());
     functions.emplace_back(std::make_unique<BecherAufdruck>());
-
+    functions.emplace_back(std::make_unique<Cylinder>());
+    functions.emplace_back(std::make_unique<Circle>());
 
     LogOutput("--------------------------------------------------------------------------\nApplication started\n");
     while (true) {
