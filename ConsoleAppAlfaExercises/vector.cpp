@@ -1,5 +1,18 @@
 #include "Header.h"
 
+std::string VectorAlloc::Execute(std::string& a) {
+    return "";
+}
+std::string VectorAlloc::Execute(std::vector<double>& userVector) {
+    try {
+        std::vector<int> intArray(userVector.at(0));  
+    }
+    catch (const std::bad_alloc& e) {
+        std::cerr << "Error: Unable to allocate memory - " << e.what() << "\n";
+    }
+    return "";
+}
+
 std::string Vector::Execute(std::string& a) {
     return "";
 }

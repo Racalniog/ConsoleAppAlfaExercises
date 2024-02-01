@@ -68,6 +68,15 @@ public:
     }
 };
 
+class VectorAlloc : public BaseFunction {
+public:
+    std::string Execute(std::string& a);
+    std::string Execute(std::vector<double>& userVector);
+    std::string GetName() {
+        return "Memory allocation exception test with huge number input";
+    }
+};
+
 class VectorMinMax : public BaseFunction {
 public:
     std::string Execute(std::string& a);

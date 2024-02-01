@@ -251,3 +251,165 @@ Application started
 2024-01-31 14:44:25 
 2024-01-31 14:44:28 Input: q
 2024-01-31 14:44:28 Quitting app
+2024-02-01 12:51:26 --------------------------------------------------------------------------
+Application started
+2024-02-01 12:51:26 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 12:51:26 0. reverseString(string a)	2024-02-01 12:51:26 1. removeSpaces(string a)	2024-02-01 12:51:26 2. countNumsInString(string a)	2024-02-01 12:51:26 
+2024-02-01 12:51:26 3. removeLeadingSpaces(string a)	2024-02-01 12:51:26 4. removeTrailingSpaces(string a)	2024-02-01 12:51:26 
+2024-02-01 12:51:26 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 12:51:26 6. playTicTacToe()	2024-02-01 12:51:26 
+2024-02-01 12:51:26 7. isPalindrome(string a)	2024-02-01 12:51:26 8. vecInit()	2024-02-01 12:51:26 
+2024-02-01 12:51:26 9. minMax( vector<double>& vec)	2024-02-01 12:51:26 10. reversed( vector<double>& v)	2024-02-01 12:51:26 
+2024-02-01 12:51:26 11. roundVector(vector<double>& v) 	2024-02-01 12:51:26 12. fibN(int i)	2024-02-01 12:51:26 
+2024-02-01 12:51:26 13. Becher Klasse	2024-02-01 12:51:26 14. BecherAufdruck Klasse	2024-02-01 12:51:26 
+2024-02-01 12:51:26 15. Cylinder(double radius, double height)	2024-02-01 12:51:26 16. Circle(double radius)	2024-02-01 12:51:26 
+2024-02-01 12:51:26 
+2024-02-01 13:53:10 Input: q
+2024-02-01 13:53:10 Quitting app
+2024-02-01 14:00:50 --------------------------------------------------------------------------
+Application started
+2024-02-01 14:00:50 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:00:50 0. reverseString(string a)	2024-02-01 14:00:50 1. removeSpaces(string a)	2024-02-01 14:00:50 2. countNumsInString(string a)	2024-02-01 14:00:50 
+2024-02-01 14:00:50 3. removeLeadingSpaces(string a)	2024-02-01 14:00:50 4. removeTrailingSpaces(string a)	2024-02-01 14:00:50 
+2024-02-01 14:00:50 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:00:50 6. playTicTacToe()	2024-02-01 14:00:50 
+2024-02-01 14:00:50 7. isPalindrome(string a)	2024-02-01 14:00:50 8. vecInit()	2024-02-01 14:00:50 
+2024-02-01 14:00:50 9. minMax( vector<double>& vec)	2024-02-01 14:00:50 10. reversed( vector<double>& v)	2024-02-01 14:00:50 
+2024-02-01 14:00:50 11. roundVector(vector<double>& v) 	2024-02-01 14:00:50 12. fibN(int i)	2024-02-01 14:00:50 
+2024-02-01 14:00:50 13. Becher Klasse	2024-02-01 14:00:50 14. BecherAufdruck Klasse	2024-02-01 14:00:50 
+2024-02-01 14:00:50 15. Cylinder(double radius, double height)	2024-02-01 14:00:50 16. Circle(double radius)	2024-02-01 14:00:50 
+2024-02-01 14:00:50 17. test memory allocation exception with huge number input	2024-02-01 14:00:50 
+2024-02-01 14:00:55 Input: 17
+2024-02-01 14:00:55 Enter 4 parameter(s) for test memory allocation exception with huge number input to manipulate: 2024-02-01 14:00:55 Enter numbers separated by space: 2024-02-01 14:00:58 Input: 234235235235
+2024-02-01 14:00:58 
+ Time taken by function: 0 minutes 74058 microseconds
+
+2024-02-01 14:00:58 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:00:58 0. reverseString(string a)	2024-02-01 14:00:58 1. removeSpaces(string a)	2024-02-01 14:00:58 2. countNumsInString(string a)	2024-02-01 14:00:58 
+2024-02-01 14:00:58 3. removeLeadingSpaces(string a)	2024-02-01 14:00:58 4. removeTrailingSpaces(string a)	2024-02-01 14:00:58 
+2024-02-01 14:00:58 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:00:58 6. playTicTacToe()	2024-02-01 14:00:58 
+2024-02-01 14:00:58 7. isPalindrome(string a)	2024-02-01 14:00:58 8. vecInit()	2024-02-01 14:00:58 
+2024-02-01 14:00:58 9. minMax( vector<double>& vec)	2024-02-01 14:00:58 10. reversed( vector<double>& v)	2024-02-01 14:00:58 
+2024-02-01 14:00:58 11. roundVector(vector<double>& v) 	2024-02-01 14:00:58 12. fibN(int i)	2024-02-01 14:00:58 
+2024-02-01 14:00:58 13. Becher Klasse	2024-02-01 14:00:58 14. BecherAufdruck Klasse	2024-02-01 14:00:58 
+2024-02-01 14:00:58 15. Cylinder(double radius, double height)	2024-02-01 14:00:58 16. Circle(double radius)	2024-02-01 14:00:58 
+2024-02-01 14:00:58 17. test memory allocation exception with huge number input	2024-02-01 14:00:58 
+2024-02-01 14:01:05 Input: 17
+2024-02-01 14:01:05 Enter 4 parameter(s) for test memory allocation exception with huge number input to manipulate: 2024-02-01 14:01:05 Enter numbers separated by space: 2024-02-01 14:01:07 Input: 9999999
+2024-02-01 14:01:07 
+ Time taken by function: 0 minutes 684537 microseconds
+
+2024-02-01 14:01:07 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:01:07 0. reverseString(string a)	2024-02-01 14:01:07 1. removeSpaces(string a)	2024-02-01 14:01:07 2. countNumsInString(string a)	2024-02-01 14:01:07 
+2024-02-01 14:01:07 3. removeLeadingSpaces(string a)	2024-02-01 14:01:07 4. removeTrailingSpaces(string a)	2024-02-01 14:01:07 
+2024-02-01 14:01:07 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:01:07 6. playTicTacToe()	2024-02-01 14:01:07 
+2024-02-01 14:01:07 7. isPalindrome(string a)	2024-02-01 14:01:07 8. vecInit()	2024-02-01 14:01:07 
+2024-02-01 14:01:07 9. minMax( vector<double>& vec)	2024-02-01 14:01:07 10. reversed( vector<double>& v)	2024-02-01 14:01:07 
+2024-02-01 14:01:07 11. roundVector(vector<double>& v) 	2024-02-01 14:01:07 12. fibN(int i)	2024-02-01 14:01:07 
+2024-02-01 14:01:07 13. Becher Klasse	2024-02-01 14:01:07 14. BecherAufdruck Klasse	2024-02-01 14:01:07 
+2024-02-01 14:01:07 15. Cylinder(double radius, double height)	2024-02-01 14:01:07 16. Circle(double radius)	2024-02-01 14:01:07 
+2024-02-01 14:01:07 17. test memory allocation exception with huge number input	2024-02-01 14:01:07 
+2024-02-01 14:01:13 Input: 17
+2024-02-01 14:01:13 Enter 4 parameter(s) for test memory allocation exception with huge number input to manipulate: 2024-02-01 14:01:13 Enter numbers separated by space: 2024-02-01 14:01:19 Input: 999999999
+2024-02-01 14:01:21 
+ Time taken by function: 0 minutes 402618 microseconds
+
+2024-02-01 14:01:21 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:01:21 0. reverseString(string a)	2024-02-01 14:01:21 1. removeSpaces(string a)	2024-02-01 14:01:21 2. countNumsInString(string a)	2024-02-01 14:01:21 
+2024-02-01 14:01:21 3. removeLeadingSpaces(string a)	2024-02-01 14:01:21 4. removeTrailingSpaces(string a)	2024-02-01 14:01:21 
+2024-02-01 14:01:21 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:01:21 6. playTicTacToe()	2024-02-01 14:01:21 
+2024-02-01 14:01:21 7. isPalindrome(string a)	2024-02-01 14:01:21 8. vecInit()	2024-02-01 14:01:21 
+2024-02-01 14:01:21 9. minMax( vector<double>& vec)	2024-02-01 14:01:21 10. reversed( vector<double>& v)	2024-02-01 14:01:21 
+2024-02-01 14:01:21 11. roundVector(vector<double>& v) 	2024-02-01 14:01:21 12. fibN(int i)	2024-02-01 14:01:21 
+2024-02-01 14:01:21 13. Becher Klasse	2024-02-01 14:01:21 14. BecherAufdruck Klasse	2024-02-01 14:01:21 
+2024-02-01 14:01:21 15. Cylinder(double radius, double height)	2024-02-01 14:01:21 16. Circle(double radius)	2024-02-01 14:01:21 
+2024-02-01 14:01:21 17. test memory allocation exception with huge number input	2024-02-01 14:01:21 
+2024-02-01 14:01:37 Input: 17
+2024-02-01 14:01:37 Enter 4 parameter(s) for test memory allocation exception with huge number input to manipulate: 2024-02-01 14:01:37 Enter numbers separated by space: 2024-02-01 14:01:43 Input: 999999999999
+2024-02-01 14:01:43 
+ Time taken by function: 0 minutes 3324 microseconds
+
+2024-02-01 14:01:43 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:01:43 0. reverseString(string a)	2024-02-01 14:01:43 1. removeSpaces(string a)	2024-02-01 14:01:43 2. countNumsInString(string a)	2024-02-01 14:01:43 
+2024-02-01 14:01:43 3. removeLeadingSpaces(string a)	2024-02-01 14:01:43 4. removeTrailingSpaces(string a)	2024-02-01 14:01:43 
+2024-02-01 14:01:43 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:01:43 6. playTicTacToe()	2024-02-01 14:01:43 
+2024-02-01 14:01:43 7. isPalindrome(string a)	2024-02-01 14:01:43 8. vecInit()	2024-02-01 14:01:43 
+2024-02-01 14:01:43 9. minMax( vector<double>& vec)	2024-02-01 14:01:43 10. reversed( vector<double>& v)	2024-02-01 14:01:43 
+2024-02-01 14:01:43 11. roundVector(vector<double>& v) 	2024-02-01 14:01:43 12. fibN(int i)	2024-02-01 14:01:43 
+2024-02-01 14:01:43 13. Becher Klasse	2024-02-01 14:01:43 14. BecherAufdruck Klasse	2024-02-01 14:01:43 
+2024-02-01 14:01:43 15. Cylinder(double radius, double height)	2024-02-01 14:01:43 16. Circle(double radius)	2024-02-01 14:01:43 
+2024-02-01 14:01:43 17. test memory allocation exception with huge number input	2024-02-01 14:01:43 
+2024-02-01 14:01:47 Input: 17
+2024-02-01 14:01:47 Enter 4 parameter(s) for test memory allocation exception with huge number input to manipulate: 2024-02-01 14:01:47 Enter numbers separated by space: 2024-02-01 14:01:50 Input: 99999999999
+2024-02-01 14:01:50 
+ Time taken by function: 0 minutes 856639 microseconds
+
+2024-02-01 14:01:50 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:01:50 0. reverseString(string a)	2024-02-01 14:01:50 1. removeSpaces(string a)	2024-02-01 14:01:50 2. countNumsInString(string a)	2024-02-01 14:01:50 
+2024-02-01 14:01:50 3. removeLeadingSpaces(string a)	2024-02-01 14:01:50 4. removeTrailingSpaces(string a)	2024-02-01 14:01:50 
+2024-02-01 14:01:50 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:01:50 6. playTicTacToe()	2024-02-01 14:01:50 
+2024-02-01 14:01:50 7. isPalindrome(string a)	2024-02-01 14:01:50 8. vecInit()	2024-02-01 14:01:50 
+2024-02-01 14:01:50 9. minMax( vector<double>& vec)	2024-02-01 14:01:50 10. reversed( vector<double>& v)	2024-02-01 14:01:50 
+2024-02-01 14:01:50 11. roundVector(vector<double>& v) 	2024-02-01 14:01:50 12. fibN(int i)	2024-02-01 14:01:50 
+2024-02-01 14:01:50 13. Becher Klasse	2024-02-01 14:01:50 14. BecherAufdruck Klasse	2024-02-01 14:01:50 
+2024-02-01 14:01:50 15. Cylinder(double radius, double height)	2024-02-01 14:01:50 16. Circle(double radius)	2024-02-01 14:01:50 
+2024-02-01 14:01:50 17. test memory allocation exception with huge number input	2024-02-01 14:01:50 
+2024-02-01 14:01:55 Input: 17
+2024-02-01 14:01:55 Enter 4 parameter(s) for test memory allocation exception with huge number input to manipulate: 2024-02-01 14:01:55 Enter numbers separated by space: 2024-02-01 14:01:57 Input: 9999999999
+2024-02-01 14:01:57 
+ Time taken by function: 0 minutes 805665 microseconds
+
+2024-02-01 14:01:57 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:01:57 0. reverseString(string a)	2024-02-01 14:01:57 1. removeSpaces(string a)	2024-02-01 14:01:57 2. countNumsInString(string a)	2024-02-01 14:01:57 
+2024-02-01 14:01:57 3. removeLeadingSpaces(string a)	2024-02-01 14:01:57 4. removeTrailingSpaces(string a)	2024-02-01 14:01:57 
+2024-02-01 14:01:57 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:01:57 6. playTicTacToe()	2024-02-01 14:01:57 
+2024-02-01 14:01:57 7. isPalindrome(string a)	2024-02-01 14:01:57 8. vecInit()	2024-02-01 14:01:57 
+2024-02-01 14:01:57 9. minMax( vector<double>& vec)	2024-02-01 14:01:57 10. reversed( vector<double>& v)	2024-02-01 14:01:57 
+2024-02-01 14:01:57 11. roundVector(vector<double>& v) 	2024-02-01 14:01:57 12. fibN(int i)	2024-02-01 14:01:57 
+2024-02-01 14:01:57 13. Becher Klasse	2024-02-01 14:01:57 14. BecherAufdruck Klasse	2024-02-01 14:01:57 
+2024-02-01 14:01:57 15. Cylinder(double radius, double height)	2024-02-01 14:01:57 16. Circle(double radius)	2024-02-01 14:01:57 
+2024-02-01 14:01:57 17. test memory allocation exception with huge number input	2024-02-01 14:01:57 
+2024-02-01 14:02:01 Input: 17
+2024-02-01 14:02:01 Enter 4 parameter(s) for test memory allocation exception with huge number input to manipulate: 2024-02-01 14:02:01 Enter numbers separated by space: 2024-02-01 14:02:03 Input: 999999999
+2024-02-01 14:02:04 
+ Time taken by function: 0 minutes 289460 microseconds
+
+2024-02-01 14:02:04 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:02:04 0. reverseString(string a)	2024-02-01 14:02:04 1. removeSpaces(string a)	2024-02-01 14:02:04 2. countNumsInString(string a)	2024-02-01 14:02:04 
+2024-02-01 14:02:04 3. removeLeadingSpaces(string a)	2024-02-01 14:02:04 4. removeTrailingSpaces(string a)	2024-02-01 14:02:04 
+2024-02-01 14:02:04 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:02:04 6. playTicTacToe()	2024-02-01 14:02:04 
+2024-02-01 14:02:04 7. isPalindrome(string a)	2024-02-01 14:02:04 8. vecInit()	2024-02-01 14:02:04 
+2024-02-01 14:02:04 9. minMax( vector<double>& vec)	2024-02-01 14:02:04 10. reversed( vector<double>& v)	2024-02-01 14:02:04 
+2024-02-01 14:02:04 11. roundVector(vector<double>& v) 	2024-02-01 14:02:04 12. fibN(int i)	2024-02-01 14:02:04 
+2024-02-01 14:02:04 13. Becher Klasse	2024-02-01 14:02:04 14. BecherAufdruck Klasse	2024-02-01 14:02:04 
+2024-02-01 14:02:04 15. Cylinder(double radius, double height)	2024-02-01 14:02:04 16. Circle(double radius)	2024-02-01 14:02:04 
+2024-02-01 14:02:04 17. test memory allocation exception with huge number input	2024-02-01 14:02:04 
+2024-02-01 14:02:07 Input: q
+2024-02-01 14:02:07 Quitting app
+2024-02-01 14:03:42 --------------------------------------------------------------------------
+Application started
+2024-02-01 14:03:42 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:03:42 0. reverseString(string a)	2024-02-01 14:03:42 1. removeSpaces(string a)	2024-02-01 14:03:42 2. countNumsInString(string a)	2024-02-01 14:03:42 
+2024-02-01 14:03:42 3. removeLeadingSpaces(string a)	2024-02-01 14:03:42 4. removeTrailingSpaces(string a)	2024-02-01 14:03:42 
+2024-02-01 14:03:42 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:03:42 6. playTicTacToe()	2024-02-01 14:03:42 
+2024-02-01 14:03:42 7. isPalindrome(string a)	2024-02-01 14:03:42 8. vecInit()	2024-02-01 14:03:42 
+2024-02-01 14:03:42 9. minMax( vector<double>& vec)	2024-02-01 14:03:42 10. reversed( vector<double>& v)	2024-02-01 14:03:42 
+2024-02-01 14:03:42 11. roundVector(vector<double>& v) 	2024-02-01 14:03:42 12. fibN(int i)	2024-02-01 14:03:42 
+2024-02-01 14:03:42 13. Becher Klasse	2024-02-01 14:03:42 14. BecherAufdruck Klasse	2024-02-01 14:03:42 
+2024-02-01 14:03:42 15. Cylinder(double radius, double height)	2024-02-01 14:03:42 16. Circle(double radius)	2024-02-01 14:03:42 
+2024-02-01 14:03:42 17. Memory allocation exception test with huge number input	2024-02-01 14:03:42 
+2024-02-01 14:04:11 Input: 17
+2024-02-01 14:04:11 Enter 4 parameter(s) for Memory allocation exception test with huge number input to manipulate: 2024-02-01 14:04:11 Enter numbers separated by space: 2024-02-01 14:04:19 Input: 234234234234
+2024-02-01 14:04:19 
+ Time taken by function: 0 minutes 814601 microseconds
+
+2024-02-01 14:04:19 Choose a function (0, 1, 2...) or type 'q' to quit.
+2024-02-01 14:04:19 0. reverseString(string a)	2024-02-01 14:04:19 1. removeSpaces(string a)	2024-02-01 14:04:19 2. countNumsInString(string a)	2024-02-01 14:04:19 
+2024-02-01 14:04:19 3. removeLeadingSpaces(string a)	2024-02-01 14:04:19 4. removeTrailingSpaces(string a)	2024-02-01 14:04:19 
+2024-02-01 14:04:19 5. jackpotCracker(int a, int b, int c, int d, int e, int f)	2024-02-01 14:04:19 6. playTicTacToe()	2024-02-01 14:04:19 
+2024-02-01 14:04:19 7. isPalindrome(string a)	2024-02-01 14:04:19 8. vecInit()	2024-02-01 14:04:19 
+2024-02-01 14:04:19 9. minMax( vector<double>& vec)	2024-02-01 14:04:19 10. reversed( vector<double>& v)	2024-02-01 14:04:19 
+2024-02-01 14:04:19 11. roundVector(vector<double>& v) 	2024-02-01 14:04:19 12. fibN(int i)	2024-02-01 14:04:19 
+2024-02-01 14:04:19 13. Becher Klasse	2024-02-01 14:04:19 14. BecherAufdruck Klasse	2024-02-01 14:04:19 
+2024-02-01 14:04:19 15. Cylinder(double radius, double height)	2024-02-01 14:04:19 16. Circle(double radius)	2024-02-01 14:04:19 
+2024-02-01 14:04:19 17. Memory allocation exception test with huge number input	2024-02-01 14:04:19 
+2024-02-01 14:04:21 Input: q
+2024-02-01 14:04:21 Quitting app

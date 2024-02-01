@@ -29,6 +29,7 @@ int main() {
     functions.emplace_back(std::make_unique<BecherAufdruck>());
     functions.emplace_back(std::make_unique<Cylinder>());
     functions.emplace_back(std::make_unique<Circle>());
+    functions.emplace_back(std::make_unique<VectorAlloc>());
 
     LogOutput("--------------------------------------------------------------------------\nApplication started\n");
     while (true) {
