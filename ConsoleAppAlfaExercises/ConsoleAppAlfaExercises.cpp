@@ -1,6 +1,10 @@
 #include "Header.h"
 
 /*  
+* Author: Giancarlo Stooss
+* Project: Collection of functions for a console application.
+* 
+* 
 TODO: Clean code, fix time taking, fix output and logging format, use format for output, unit tests
 Fit input better to all exceptional functions!
 */
